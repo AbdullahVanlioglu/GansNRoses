@@ -3,10 +3,13 @@ import gym
 import pickle
 import os
 import time
+import sys
+import numpy as np
+
+
 from gym import spaces
 from gym.utils import seeding
 from gym.envs.classic_control import rendering
-import numpy as np
 from os import path
 from environment.quadrotor_dynamics import Drone
 from numpy.random import uniform
@@ -29,7 +32,7 @@ class QuadrotorFormation(gym.Env):
         
         self.action_space = spaces.Discrete(self.n_action)
         self.observation_space = spaces.Box(low=0, high=255,
-                                        shape=(2, 4, 4), dtype=np.uint8)
+                                        shape=(4, 4, 2), dtype=np.uint8)
 
         self.x_lim = 3
         self.y_lim = 3
@@ -46,9 +49,8 @@ class QuadrotorFormation(gym.Env):
         return [seed]
 
     def step(self, action):
-        time.sleep(0.5)
         done = False
-        self.reward = -0.5
+        self.reward = -1
         self.iteration += 1
 
         if self.visualization:
@@ -97,19 +99,13 @@ class QuadrotorFormation(gym.Env):
 
     def get_init_map(self, index):
 
-        if self.map_type == "gan":
-            with open('./train_lib/training_map_library.pkl', 'rb') as f:
-                map_dataset = pickle.load(f)
-                map_dataset = np.array(map_dataset[0]).squeeze(1) 
-
-        elif self.map_type == "random":
-            with open('./all_possible_maps.pkl', 'rb') as f:
-                map_dataset = pickle.load(f)
+        if self.map_type == "train":
+            with open('/home/avsp/Masaüstü/GansNRoses/all_possible_maps.pkl', 'rb') as f:
+                map_dataset = pickle.load(f) 
 
         elif self.map_type == "test":
-            with open('./test_map_library.pkl', 'rb') as f:
+            with open('/home/avsp/Masaüstü/GansNRoses/all_test_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
-                map_dataset = np.array(map_dataset).squeeze(1)
 
         return map_dataset[index].copy()
 
@@ -126,7 +122,7 @@ class QuadrotorFormation(gym.Env):
         self.iteration = 0
         self.reward = 0
 
-        self.map_index = np.random.randint(low=1, high=2**16-1)
+        self.map_index = np.random.randint(low=1, high=30)
         init_map = self.get_init_map(self.map_index)
         #if self.map_iter % 60 == 0 and self.map_iter !=0:
         #self.map_index += 1
