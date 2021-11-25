@@ -15,10 +15,11 @@ from environment.quadrotor_dynamics import Drone
 from numpy.random import uniform
 from time import sleep
 from PIL import Image
+import random
 
 class QuadrotorFormation(gym.Env):
 
-    def __init__(self, map_type, visualization=False):
+    def __init__(self, map_type="random", visualization=False,data_percent=10):
         super(QuadrotorFormation, self).__init__()
 
         self.seed()
@@ -40,6 +41,8 @@ class QuadrotorFormation(gym.Env):
         self.map_index = 0
         self.map_iter = 0
         self.reward = 0
+
+        self.index_set=random.sample(range(1, 2**16-1), int((2**16-2)*data_percent/100))
 
         self.reward_map = np.zeros((self.y_lim, self.x_lim))
         #self.path_map = np.zeros((self.y_lim, self.x_lim))
@@ -122,8 +125,13 @@ class QuadrotorFormation(gym.Env):
         self.iteration = 0
         self.reward = 0
 
+<<<<<<< HEAD
         self.map_index = np.random.randint(low=1, high=30)
         init_map = self.get_init_map(self.map_index)
+=======
+        self.map_index = np.random.randint(low=0, high=len(self.index_set)-1)
+        init_map = self.get_init_map(self.index_set[self.map_index])
+>>>>>>> 7e727519872f29f1f6be012997d58d1533b824cf
         #if self.map_iter % 60 == 0 and self.map_iter !=0:
         #self.map_index += 1
         #self.map_index %= 600
