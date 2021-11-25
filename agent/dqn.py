@@ -3,8 +3,11 @@ import torch.nn as nn
 from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
+import sys
+sys.path.append("../")
 from environment.env import QuadrotorFormation
 from copy import deepcopy
+
 
 # Hyper Parameters
 BATCH_SIZE = 128
@@ -13,9 +16,11 @@ EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 100   # target update frequency
 MEMORY_CAPACITY = 200000
-N_ACTIONS = QuadrotorFormation.action_space.n
-N_STATES = QuadrotorFormation.observation_space.shape[0]
-OBS_STATES = QuadrotorFormation.observation_space.shape
+N_ACTIONS = QuadrotorFormation().action_space.n
+N_STATES = QuadrotorFormation().observation_space.shape[0]
+OBS_STATES = QuadrotorFormation().observation_space.shape
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class Net(nn.Module):
     def __init__(self, n_input_channels=2):
@@ -29,17 +34,16 @@ class Net(nn.Module):
             nn.Flatten(),
         )
 
-        with torch.no_grad():
-            n_flatten = self.cnn(
-                torch.as_tensor(OBS_STATES.sample()[None]).float()
-            ).shape[1]
 
         self.linear = nn.Sequential(
-            nn.Linear(n_flatten, N_ACTIONS), 
+            nn.Linear(128*4*4, 64),
+            nn.ReLU(),
+            nn.Linear(64,N_ACTIONS),
             nn.ReLU(),
             )
 
     def forward(self, x):
+        x = x.to(device)
         x = self.cnn(x)
         actions_value = self.linear(x)
         return actions_value
@@ -96,3 +100,10 @@ class DQN(object):
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
+
+    def save_model(self,name):
+        torch.save(self.eval_net.state_dict(), "dqn_agents/{}".format(name))
+
+    def load_model(self,name):
+        self.eval_net.load_state_dict(torch.load("dqn_agents/{}".format(name)))
+        self.eval_net.eval()
