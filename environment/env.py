@@ -32,7 +32,7 @@ class QuadrotorFormation(gym.Env):
         
         self.action_space = spaces.Discrete(self.n_action)
         self.observation_space = spaces.Box(low=0, high=255,
-                                        shape=(4, 4, 2), dtype=np.uint8)
+                                        shape=(2, 4, 4), dtype=np.uint8)
 
         self.x_lim = 3
         self.y_lim = 3
@@ -79,11 +79,11 @@ class QuadrotorFormation(gym.Env):
 
     def get_observation(self):
 
-        state = np.zeros((4,4,2))
+        state = np.zeros((1,2,4,4))
 
         #state[:,:,0] = self.path_map*255.0
-        state[:,:,0] = self.reward_map*255.0
-        state[:,:,1] = self.agent.state*255.0
+        state[:,0,:,:] = self.reward_map
+        state[:,1,:,:] = self.agent.state
         
         return np.array(state, dtype=np.uint8)
 
