@@ -46,9 +46,13 @@ class QuadrotorFormation(gym.Env):
         return [seed]
 
     def step(self, action):
+        time.sleep(0.5)
         done = False
         self.reward = -0.5
         self.iteration += 1
+
+        if self.visualization:
+            self.render()
 
         self.update_agent_pos(action)
 
@@ -68,7 +72,7 @@ class QuadrotorFormation(gym.Env):
             self.close()
 
         info = {"map_index": self.map_index}
-        #time.sleep(0.3)
+        
         return state, self.reward, done, info
 
     def get_observation(self):
@@ -128,14 +132,17 @@ class QuadrotorFormation(gym.Env):
         #self.map_index += 1
         #self.map_index %= 600
 
-        agent_initX = 2
-        agent_initY = 2
+        agent_initX = 0
+        agent_initY = 0
         #self.path_map = init_map[0]
         self.reward_map = init_map[1]
-
+        
         self.reward_wall_num()
 
         self.generate_agent_position(agent_initY, agent_initX)
+
+        if int(self.reward_map[int(self.agent.y), int(self.agent.x)]) == 1:
+            self.reward_map[int(self.agent.y),int( self.agent.x)] = 0
 
         state = self.get_observation()
 
