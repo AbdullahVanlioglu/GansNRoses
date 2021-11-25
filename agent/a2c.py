@@ -1,8 +1,6 @@
-import math
-import random
-
-import gym
 import numpy as np
+import sys
+sys.path.append('..')
 
 import torch
 import torch.nn as nn
@@ -18,8 +16,7 @@ device   = torch.device("cuda" if use_cuda else "cpu")
 from multiprocessing_env import SubprocVecEnv
 from environment.env import QuadrotorFormation
 
-
-env = QuadrotorFormation() 
+env = QuadrotorFormation(map_type="train") 
 
 # num_envs = 8
 # env_name = "CartPole-v0"
@@ -37,29 +34,29 @@ env = QuadrotorFormation()
 # env = gym.make(env_name) # a single env
 
 class ActorCritic(nn.Module):
-    def __init__(self, num_inputs, num_outputs, hidden_size, std=0.0):
+    def __init__(self, obs_shape, num_outputs, hidden_size, std=0.0):
         super(ActorCritic, self).__init__()
-        channel_num = num_inputs.shape[0] #2
-        img_size = num_inputs.shape[1] #4
+        num_channel = obs_shape[0] # 2
+        img_size = obs_shape[1] # 4
         
         self.critic = nn.Sequential(
-            nn.conv2d(channel_num, hidden_size, kernel_size=1),
-            nn.ReLu(),
-            nn.conv2d(hidden_size, hidden_size*2, kernel_size=1),
-            nn.Flatten(),
-            nn.Linear(hidden_size*img_size*img_size, hidden_size),
+            nn.Conv2d(num_channel, hidden_size, kernel_size=1),
             nn.ReLU(),
-            nn.Linear(hidden_size, 1)
+            nn.Conv2d(hidden_size, hidden_size*2, kernel_size=1),
+            nn.Flatten(),
+            nn.Linear(hidden_size*2*img_size*img_size, hidden_size*2),
+            nn.ReLU(),
+            nn.Linear(hidden_size*2, 1)
         )
         
         self.actor = nn.Sequential(
-            nn.conv2d(channel_num, hidden_size, kernel_size=1),
-            nn.ReLu(),
-            nn.conv2d(hidden_size, hidden_size*2, kernel_size=1),
-            nn.Flatten(),
-            nn.Linear(hidden_size*img_size*img_size, hidden_size),
+            nn.Conv2d(num_channel, hidden_size, kernel_size=1),
             nn.ReLU(),
-            nn.Linear(hidden_size, num_outputs),
+            nn.Conv2d(hidden_size, hidden_size*2, kernel_size=1),
+            nn.Flatten(),
+            nn.Linear(hidden_size*2*img_size*img_size, hidden_size*2),
+            nn.ReLU(),
+            nn.Linear(hidden_size*2, num_outputs),
             nn.Softmax(dim=1),
         )
         
@@ -70,9 +67,9 @@ class ActorCritic(nn.Module):
         return dist, value
 
 
-def test_env(vis=False):
+def test_env():
     state = env.reset()
-    if vis: env.render()
+
     done = False
     total_reward = 0
     while not done:
@@ -80,7 +77,6 @@ def test_env(vis=False):
         dist, _ = model(state)
         next_state, reward, done, _ = env.step(dist.sample().cpu().numpy()[0])
         state = next_state
-        if vis: env.render()
         total_reward += reward
     return total_reward
 
@@ -99,26 +95,29 @@ def plot(frame_idx, rewards):
     plt.pause(0.0001)
 
 
-num_inputs  = env.observation_space.shape[0]
+obs_shape  = env.observation_space.shape
+print(obs_shape)
 num_outputs = env.action_space.n
 
 #Hyper params:
 hidden_size = 64
 lr          = 7e-4
-num_steps   = 1e6
+num_steps   = 100
 
-model = ActorCritic(num_inputs, num_outputs, hidden_size).to(device)
+model = ActorCritic(obs_shape, num_outputs, hidden_size).to(device)
 optimizer = optim.Adam(model.parameters())
 
-
-max_frames   = 20000
+total_maps   = 20000
+total_frames = 2**16-1
 frame_idx    = 0
 test_rewards = []
 
+test_index = 0
+iteration = 0
 
-state = env.reset()
+for map_idx in range(total_maps):
 
-while frame_idx < max_frames:
+    state = env.reset()
 
     log_probs = []
     values    = []
@@ -127,43 +126,51 @@ while frame_idx < max_frames:
     entropy = 0
 
     # rollout trajectory
-    for _ in range(num_steps):
+    while True:
+        iteration += 1
         state = torch.FloatTensor(state).to(device)
         dist, value = model(state)
 
         action = dist.sample()
-        next_state, reward, done, _ = envs.step(action.cpu().numpy())
+        next_state, reward, done, _ = env.step(action.cpu().numpy())
 
         log_prob = dist.log_prob(action)
         entropy += dist.entropy().mean()
         
         log_probs.append(log_prob)
         values.append(value)
-        rewards.append(torch.FloatTensor(reward).unsqueeze(1).to(device))
-        masks.append(torch.FloatTensor(1 - done).unsqueeze(1).to(device))
+        rewards.append(torch.FloatTensor([reward]).to(device))
+        masks.append(torch.FloatTensor([1 - done]).to(device))
         
         state = next_state
-        frame_idx += 1
         
-        if frame_idx % 100 == 0:
-            test_rewards.append(np.mean([test_env() for _ in range(10)]))
+        test_index += 1
+
+        if test_index >= 6553:
+            test_index = 0
+            test_rewards.append(test_env())
             plot(frame_idx, test_rewards)
+
+        if done:
+            break
+        
+        if iteration % 5 == 0:
+                  
+            next_state = torch.FloatTensor(next_state).to(device)
+            _, next_value = model(next_state)
+            returns = compute_returns(next_value, rewards, masks)
             
-    next_state = torch.FloatTensor(next_state).to(device)
-    _, next_value = model(next_state)
-    returns = compute_returns(next_value, rewards, masks)
-    
-    log_probs = torch.cat(log_probs)
-    returns   = torch.cat(returns).detach()
-    values    = torch.cat(values)
+            log_probs = torch.cat(log_probs)
+            returns   = torch.cat(returns).detach()
+            values    = torch.cat(values)
 
-    advantage = returns - values
+            advantage = returns - values
 
-    actor_loss  = -(log_probs * advantage.detach()).mean()
-    critic_loss = advantage.pow(2).mean()
+            actor_loss  = -(log_probs * advantage.detach()).mean()
+            critic_loss = advantage.pow(2).mean()
 
-    loss = actor_loss + 0.5 * critic_loss - 0.001 * entropy
+            loss = actor_loss + 0.5 * critic_loss - 0.001 * entropy
 
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()

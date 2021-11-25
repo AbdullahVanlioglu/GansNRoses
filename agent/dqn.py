@@ -36,9 +36,13 @@ class Net(nn.Module):
 
 
         self.linear = nn.Sequential(
+<<<<<<< HEAD
             nn.Linear(128*4*4, 64),
             nn.ReLU(),
             nn.Linear(64,N_ACTIONS),
+=======
+            nn.Linear(128*4*4, N_ACTIONS), 
+>>>>>>> 3a3e84b15d4b1cc386a0bfec4d55448f59d5235f
             nn.ReLU(),
             )
 
