@@ -29,7 +29,7 @@ class QuadrotorFormation(gym.Env):
         
         self.action_space = spaces.Discrete(self.n_action)
         self.observation_space = spaces.Box(low=0, high=255,
-                                        shape=(4, 4, 2), dtype=np.uint8)
+                                        shape=(2, 4, 4), dtype=np.uint8)
 
         self.x_lim = 3
         self.y_lim = 3
@@ -136,7 +136,7 @@ class QuadrotorFormation(gym.Env):
         agent_initY = 0
         #self.path_map = init_map[0]
         self.reward_map = init_map[1]
-        
+
         self.reward_wall_num()
 
         self.generate_agent_position(agent_initY, agent_initX)
