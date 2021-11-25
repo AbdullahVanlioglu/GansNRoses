@@ -35,7 +35,7 @@ class Net(nn.Module):
             ).shape[1]
 
         self.linear = nn.Sequential(
-            nn.Linear(n_flatten, N_ACTIONS), 
+            nn.Linear(128*4*4, N_ACTIONS), 
             nn.ReLU(),
             )
 
