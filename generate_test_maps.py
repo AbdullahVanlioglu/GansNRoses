@@ -312,7 +312,7 @@ max_reward_list.append(max_reward1)
 
 
 max_reward=np.sum(max_reward_list)
-print("Max_Reward:{}".format(max_reward))
+print("Max_Reward:{}".format(max_reward+161))
 print("Min_Reward:{}".format(30*-100))
 """f = open('./all_test_maps.pkl', 'wb')
 
