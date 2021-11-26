@@ -12,7 +12,7 @@ from environment.env import QuadrotorFormation
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
 
 
-max_steps = 26e6
+max_steps = 4e5
 
 class CustomCNN(BaseFeaturesExtractor):
     """
@@ -30,8 +30,6 @@ class CustomCNN(BaseFeaturesExtractor):
         self.cnn = nn.Sequential(
             nn.Conv2d(n_input_channels, 64, kernel_size=1, stride=1),
             nn.ReLU(),
-            nn.Conv2d(64, 128, kernel_size=1, stride=1, padding=0),
-            nn.ReLU(),
             nn.Flatten(),
         )
 
@@ -40,10 +38,11 @@ class CustomCNN(BaseFeaturesExtractor):
             n_flatten = self.cnn(
                 torch.as_tensor(observation_space.sample()[None]).float()
             ).shape[1]
-        #print(n_flatten)
 
         self.linear = nn.Sequential(
-            nn.Linear(n_flatten, features_dim), 
+            nn.Linear(n_flatten, int(n_flatten/2)), 
+            nn.ReLU(),
+            nn.Linear(int(n_flatten/2), features_dim), 
             nn.ReLU(),
             )
 
@@ -52,7 +51,7 @@ class CustomCNN(BaseFeaturesExtractor):
 
 policy_kwargs = dict(
     features_extractor_class=CustomCNN,
-    features_extractor_kwargs=dict(features_dim=512),)
+    features_extractor_kwargs=dict(features_dim=256),)
 
 
 # Train with GAN Generated Maps
@@ -64,14 +63,16 @@ def main():
     #model.learn(total_timesteps=max_steps)
     #model.save("./weights/a2c_gan_curr2")
 
-    # Train with GAN Random Maps
-    vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="random", visualization=True), n_envs=1, vec_env_cls=SubprocVecEnv)
-    #model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, exploration_fraction = 0.8, verbose=1, tensorboard_log="./dqn_tensorboard/")
-    model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
+    for i in range(10):
 
-    model.learn(total_timesteps=max_steps)
-    model.save("./weights/a2c_random_curr2")
-    
+        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False, data_percent=(i+1)*10), n_envs=1, vec_env_cls=SubprocVecEnv)
+        model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
+        #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
+
+        model.learn(total_timesteps=max_steps)
+        model.save(f"./weights/dqn_{(i+1)*10}")
+
+
 if __name__ == '__main__':
     main()
 

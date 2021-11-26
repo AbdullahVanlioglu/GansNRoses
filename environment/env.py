@@ -19,7 +19,7 @@ import random
 
 class QuadrotorFormation(gym.Env):
 
-    def __init__(self, map_type="random", visualization=False,data_percent=10):
+    def __init__(self, map_type="random", visualization=False, data_percent=10):
         super(QuadrotorFormation, self).__init__()
 
         self.seed()
@@ -33,7 +33,7 @@ class QuadrotorFormation(gym.Env):
         
         self.action_space = spaces.Discrete(self.n_action)
         self.observation_space = spaces.Box(low=0, high=255,
-                                        shape=(2, 4, 4), dtype=np.uint8)
+                                        shape=(4, 4, 2), dtype=np.uint8)
 
         self.x_lim = 3
         self.y_lim = 3
@@ -42,16 +42,16 @@ class QuadrotorFormation(gym.Env):
         self.map_iter = 0
         self.reward = 0
 
-        self.index_set=random.sample(range(1, 2**16-1), int((2**16-2)*data_percent/100))
+        self.index_set = random.sample(range(1, 2**16-1), int((2**16-2)*data_percent/100))
 
         self.reward_map = np.zeros((self.y_lim, self.x_lim))
-        #self.path_map = np.zeros((self.y_lim, self.x_lim))
 
     def seed(self, seed=None):
         self.np_random, seed = seeding.np_random(seed)
         return [seed]
 
     def step(self, action):
+        # time.sleep(0.2)
         done = False
         self.reward = -1
         self.iteration += 1
@@ -63,7 +63,7 @@ class QuadrotorFormation(gym.Env):
 
         if int(self.reward_map[int(self.agent.y), int(self.agent.x)]) == 1:
             self.reward_map[int(self.agent.y),int( self.agent.x)] = 0
-            #self.reward += 8
+            self.reward = 0
 
         self.reward_wall_num()
         state = self.get_observation()
@@ -82,11 +82,11 @@ class QuadrotorFormation(gym.Env):
 
     def get_observation(self):
 
-        state = np.zeros((1,2,4,4))
+        state = np.zeros((4,4,2))
 
         #state[:,:,0] = self.path_map*255.0
-        state[:,0,:,:] = self.reward_map
-        state[:,1,:,:] = self.agent.state
+        state[:,:,0] = self.reward_map*255.0
+        state[:,:,1] = self.agent.state*255.0
         
         return np.array(state, dtype=np.uint8)
 
@@ -125,16 +125,10 @@ class QuadrotorFormation(gym.Env):
         self.iteration = 0
         self.reward = 0
 
-<<<<<<< HEAD
-        self.map_index = np.random.randint(low=1, high=30)
-        init_map = self.get_init_map(self.map_index)
-=======
-        self.map_index = np.random.randint(low=0, high=len(self.index_set)-1)
         init_map = self.get_init_map(self.index_set[self.map_index])
->>>>>>> 7e727519872f29f1f6be012997d58d1533b824cf
         #if self.map_iter % 60 == 0 and self.map_iter !=0:
-        #self.map_index += 1
-        #self.map_index %= 600
+        self.map_index += 1
+        self.map_index %= len(self.index_set)
 
         agent_initX = 0
         agent_initY = 0
