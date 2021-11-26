@@ -55,6 +55,7 @@ class QuadrotorFormation(gym.Env):
         done = False
         self.reward = -1
         self.iteration += 1
+        #time.sleep(.3)
 
         if self.visualization:
             self.render()
@@ -63,7 +64,7 @@ class QuadrotorFormation(gym.Env):
 
         if int(self.reward_map[int(self.agent.y), int(self.agent.x)]) == 1:
             self.reward_map[int(self.agent.y),int( self.agent.x)] = 0
-            #self.reward += 8
+            self.reward += 1
 
         self.reward_wall_num()
         state = self.get_observation()
@@ -82,11 +83,11 @@ class QuadrotorFormation(gym.Env):
 
     def get_observation(self):
 
-        state = np.zeros((1,2,4,4))
+        state = np.zeros((2,4,4))
 
         #state[:,:,0] = self.path_map*255.0
-        state[:,0,:,:] = self.reward_map
-        state[:,1,:,:] = self.agent.state
+        state[0,:,:] = self.reward_map
+        state[1,:,:] = self.agent.state
         
         return np.array(state, dtype=np.uint8)
 
@@ -103,11 +104,11 @@ class QuadrotorFormation(gym.Env):
     def get_init_map(self, index):
 
         if self.map_type == "train":
-            with open('/home/avsp/Masaüstü/GansNRoses/all_possible_maps.pkl', 'rb') as f:
+            with open('all_possible_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f) 
 
         elif self.map_type == "test":
-            with open('/home/avsp/Masaüstü/GansNRoses/all_test_maps.pkl', 'rb') as f:
+            with open('all_test_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
 
         return map_dataset[index].copy()
@@ -125,13 +126,8 @@ class QuadrotorFormation(gym.Env):
         self.iteration = 0
         self.reward = 0
 
-<<<<<<< HEAD
-        self.map_index = np.random.randint(low=1, high=30)
-        init_map = self.get_init_map(self.map_index)
-=======
         self.map_index = np.random.randint(low=0, high=len(self.index_set)-1)
         init_map = self.get_init_map(self.index_set[self.map_index])
->>>>>>> 7e727519872f29f1f6be012997d58d1533b824cf
         #if self.map_iter % 60 == 0 and self.map_iter !=0:
         #self.map_index += 1
         #self.map_index %= 600

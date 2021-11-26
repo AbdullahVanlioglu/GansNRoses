@@ -4,7 +4,7 @@ import numpy as np
 import torch.nn as nn
 import gym
 
-from stable_baselines3 import A2C, DQN
+from stable_baselines3 import A2C, DQN,PPO
 from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.env_checker import check_env
 from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
@@ -12,7 +12,7 @@ from environment.env import QuadrotorFormation
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
 
 
-max_steps = 26e6
+max_steps = 1e6
 
 class CustomCNN(BaseFeaturesExtractor):
     """
@@ -65,12 +65,12 @@ def main():
     #model.save("./weights/a2c_gan_curr2")
 
     # Train with GAN Random Maps
-    vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="random", visualization=True), n_envs=1, vec_env_cls=SubprocVecEnv)
-    #model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, exploration_fraction = 0.8, verbose=1, tensorboard_log="./dqn_tensorboard/")
-    model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
+    vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False,data_percent=10), n_envs=1, vec_env_cls=SubprocVecEnv)
+    model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, exploration_fraction = 0.8, verbose=1, tensorboard_log="./dqn_tensorboard/")
+    #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
 
     model.learn(total_timesteps=max_steps)
-    model.save("./weights/a2c_random_curr2")
+    model.save("./weights/DQN-10-random")
     
 if __name__ == '__main__':
     main()
