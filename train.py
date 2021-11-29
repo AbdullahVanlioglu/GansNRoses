@@ -1,83 +1,125 @@
-import pickle
-import torch
+import os
 import numpy as np
+
+import torch
 import torch.nn as nn
-import gym
+import torch.nn.functional as F
+import torch.optim as optim
+import pandas as pd
 
-from stable_baselines3 import A2C, DQN
-from stable_baselines3.common.env_util import make_vec_env
-from stable_baselines3.common.env_checker import check_env
-from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
-from environment.env import QuadrotorFormation
-from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
+from torch.nn.functional import interpolate
+from loguru import logger
+from tqdm import tqdm
+from generate_noise import generate_spatial_noise
+from environment.level_utils import  one_hot_to_ascii_level
+from models import init_models, reset_grads, calc_gradient_penalty, save_networks
+from draw_concat import draw_concat
+from read_maps import *
 
+stat_columns = ['errD_fake', 'errD_real', 'errG']
 
-max_steps = 3e5
+def write_stats(stats,file_name='errors.csv'):
+    df_stats = pd.DataFrame([stats], columns=stat_columns)
+    df_stats.to_csv(file_name, mode='a', index=False,header=not os.path.isfile(file_name))
 
-class CustomCNN(BaseFeaturesExtractor):
-    """
-    :param observation_space: (gym.Space)
-    :param features_dim: (int) Number of features extracted.
-        This corresponds to the number of unit for the last layer.
-    """
+class GAN:
+    def __init__(self,opt):
+        self.D, self.G = init_models(opt)
 
-    def __init__(self, observation_space: gym.spaces.Box, features_dim: int = 256):
-        super(CustomCNN, self).__init__(observation_space, features_dim)
-        # We assume CxHxW images (channels first)
-        # Re-ordering will be done by pre-preprocessing or wrapper
-        n_input_channels = observation_space.shape[0]
+        self.padsize = int(1 * opt.num_layer)  # As kernel size is always 3 currently, padsize goes up by one per layer
+
+        self.pad_noise = nn.ZeroPad2d(self.padsize)
+        self.pad_image = nn.ZeroPad2d(self.padsize)
+
+        # setup optimizer
+        self.optimizerD = optim.Adam(self.D.parameters(), lr=opt.lr_d, betas=(opt.beta1, 0.999))
+        self.optimizerG = optim.Adam(self.G.parameters(), lr=opt.lr_g, betas=(opt.beta1, 0.999))
+
+        self.schedulerD = torch.optim.lr_scheduler.MultiStepLR(optimizer=self.optimizerD, milestones=[1500, 2500], gamma=opt.gamma)
+        self.schedulerG = torch.optim.lr_scheduler.MultiStepLR(optimizer=self.optimizerG, milestones=[1500, 2500], gamma=opt.gamma)
+
+    def train(self, real, opt):
+        """ Train one scale. D and G are the discriminator and generator, real is the original map and its label.
+        opt is a namespace that holds all necessary parameters. """
+        real = torch.FloatTensor(real) # 1x2x4x4
+        nzx = real.shape[2]  # Noise size x
+        nzy = real.shape[3]  # Noise size y
+
+        for step in tqdm(range(opt.niter)):
+            noise_ = generate_spatial_noise([1, opt.nc_current, nzx, nzy], device=opt.device) # 1x2x4x4
+            #noise_ = self.pad_noise(noise_) # 1x2x6x6
+
+            ###############################################
+            # (1) Update D network: maximize D(x) + D(G(z))
+            ###############################################
+            for j in range(opt.Dsteps):
+
+                if opt.add_prev:
+                    if(j==0 and step==0):
+                        prev = torch.zeros(1, opt.nc_current, nzx, nzy).to(opt.device)
+                        prev = self.pad_image(prev)
+                    else:
+                        prev = interpolate(prev, real.shape[-2:], mode="bilinear", align_corners=False)
+                        prev = self.pad_image(prev)
+                else:
+                    prev = torch.zeros(1, opt.nc_current, nzx, nzy).to(opt.device)
+                    prev = self.pad_image(prev)
+
+                # train with real and fake
+                self.D.zero_grad()
+                real = real.to(opt.device)
+                output = self.D(real).to(opt.device)
+                # errD_real = -torch.clamp(output_r.mean(),min=-5.0,max=5.0)
+                errD_real = -output.mean()
+                errD_real.backward(retain_graph=True)
+
+                # After creating our correct noise input, we feed it to the generator:
+                #noise = noise_ + prev
+
+                fake = self.G(noise_.detach(), prev, temperature=1).to(opt.device)
+
+                # Then run the result through the discriminator
+                output = self.D(fake.detach()).to(opt.device)
+                errD_fake = output.mean()
+                # errD_fake = torch.clamp(output_f.mean(),min=-5.0,max=5.0)
+
+                # Backpropagation
+                errD_fake.backward(retain_graph=False)
+
+                # # Gradient Penalty
+                gradient_penalty = calc_gradient_penalty(self.D, real, fake, opt.lambda_grad, opt.device)
+                gradient_penalty.backward(retain_graph=False)
+
+                self.optimizerD.step()
+
+            ########################################
+            # (2) Update G network: maximize D(G(z))
+            ########################################
+
+            for j in range(opt.Gsteps):
+                self.G.train()
+                self.G.zero_grad()
+                fake = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
+                output = self.D(fake).to(opt.device)
+
+                errG = -output.mean()
+                errG.backward(retain_graph=False)
+
+                self.optimizerG.step()
+            
+            write_stats([errD_fake.item(), errD_real.item(), errG.item()])
+
+            self.schedulerD.step()
+            self.schedulerG.step()
+
+        # self.G = reset_grads(self.G, True)
+        # self.D = reset_grads(self.D, True)
         
-        self.cnn = nn.Sequential(
-            nn.Conv2d(n_input_channels, 64, kernel_size=1, stride=1),
-            nn.ReLU(),
-            nn.Flatten(),
-        )
-
-        # Compute shape by doing one forward pass
         with torch.no_grad():
-            n_flatten = self.cnn(
-                torch.as_tensor(observation_space.sample()[None]).float()
-            ).shape[1]
-
-        self.linear = nn.Sequential(
-            nn.Linear(n_flatten, int(n_flatten/2)), 
-            nn.ReLU(),
-            nn.Linear(int(n_flatten/2), features_dim), 
-            nn.ReLU(),
-            )
-
-    def forward(self, observations: torch.Tensor) -> torch.Tensor:
-        return self.linear(self.cnn(observations))
-
-policy_kwargs = dict(
-    features_extractor_class=CustomCNN,
-    features_extractor_kwargs=dict(features_dim=256),)
-
-
-# Train with GAN Generated Maps
-def main():
-    #vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="gan", visualization=False), n_envs=18, vec_env_cls=SubprocVecEnv)
-    #model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, exploration_fraction = 0.8, verbose=1, tensorboard_log="./dqn_tensorboard/")
-    #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/gan")
-
-    #model.learn(total_timesteps=max_steps)
-    #model.save("./weights/a2c_gan_curr2")
-
-    for i in range(1):
-
-        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False, data_percent=(i+1)*0.02), n_envs=1, vec_env_cls=SubprocVecEnv)
-        model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
-        #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
-
-        model.learn(total_timesteps=max_steps)
-        model.save(f"./weights/dqn_{(i+1)*0.02}")
-
-
-if __name__ == '__main__':
-    main()
-
-# obs = env.reset()
-# while True:
-#     action, _states = model.predict(obs)
-#     obs, rewards, dones, info = env.step(action)
-#     # env.render()
+            self.G.eval()
+            generated_map = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
+            
+        return generated_map
+    
+    def better_save(self, iteration):
+        save_networks(self.G, self.D, iteration)

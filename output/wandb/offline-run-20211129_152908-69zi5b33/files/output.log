@@ -1,0 +1,11 @@
+[32m2021-11-29 15:29:16.509[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+coded_fake_map ['XXXX\n', 'XXXX\n', 'XXXX\n', 'XXXX']
+100%|████████████████████████████████████████████████████████████████████| 15/15 [00:00<00:00, 33.11it/s]
+Traceback (most recent call last):
+  File "main.py", line 94, in <module>
+    main()
+  File "main.py", line 79, in main
+    prize_locations, ground_location = fa_regenate(coded_fake_map, opt)
+  File "/home/avsp/Masaüstü/GansNRoses/read_maps.py", line 44, in fa_regenate
+    if matrix_map[0,x,y] == 1:
+TypeError: list indices must be integers or slices, not tuple

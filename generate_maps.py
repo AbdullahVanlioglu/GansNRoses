@@ -1,9 +1,13 @@
 from itertools import product
 import numpy as np
-import _pickle as cPickle
+import pickle as cPickle
+from config import get_arguments, post_config
+
+opt = get_arguments().parse_args()
+opt = post_config(opt)
 
 #Map size
-map_size = 4
+map_size = opt.full_map_size
 #Generate all possible map configuration
 #0:Ground, 1:Prize
 harita = product(range(2), repeat=map_size**2)
