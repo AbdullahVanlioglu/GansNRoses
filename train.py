@@ -63,14 +63,14 @@ def main():
     #model.learn(total_timesteps=max_steps)
     #model.save("./weights/a2c_gan_curr2")
 
-    for i in range(9):
+    for i in range(1):
 
-        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False, data_percent=(i+1)), n_envs=1, vec_env_cls=SubprocVecEnv)
+        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False, data_percent=(i+1)*0.02), n_envs=1, vec_env_cls=SubprocVecEnv)
         model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
         #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
 
         model.learn(total_timesteps=max_steps)
-        model.save(f"./weights/dqn_{(i+1)}")
+        model.save(f"./weights/dqn_{(i+1)*0.02}")
 
 
 if __name__ == '__main__':

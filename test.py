@@ -9,8 +9,8 @@ from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
 def main():
 
     #vecenv = make_vec_env(lambda: TestQuadrotorFormation(map_type="test", visualization=True), n_envs=1, vec_env_cls=SubprocVecEnv)
-    env = TestQuadrotorFormation(map_type="test", visualization=True)
-    model = DQN.load("./weights/dqn_20", env = env)
+    env = TestQuadrotorFormation(map_type="test", visualization=False)
+    model = DQN.load("./weights/dqn_0.02", env = env)
     #model = A2C.load("./weights/a2c_random_curr2", env = env)
 
     total_rew = 0

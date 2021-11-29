@@ -44,7 +44,7 @@ class TestQuadrotorFormation(gym.Env):
         return [seed]
 
     def step(self, action):
-        time.sleep(0.1)
+        #time.sleep(0.1)
         done = False
         self.reward = -1
         self.iteration += 1
