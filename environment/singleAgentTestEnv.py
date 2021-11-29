@@ -15,7 +15,7 @@ from PIL import Image
 
 class TestQuadrotorFormation(gym.Env):
 
-    def __init__(self, map_type, visualization=True):
+    def __init__(self, map_type, visualization=True,map_index=0):
         super(TestQuadrotorFormation, self).__init__()
 
         self.seed()
@@ -36,6 +36,7 @@ class TestQuadrotorFormation(gym.Env):
         self.iteration = 0
         self.reward = 0
         self.map_type = map_type
+        self.map_index=map_index
 
         self.reward_map = np.zeros((self.y_lim, self.x_lim))
 
@@ -44,7 +45,7 @@ class TestQuadrotorFormation(gym.Env):
         return [seed]
 
     def step(self, action):
-        time.sleep(0.1)
+        #time.sleep(0.1)
         done = False
         self.reward = -1
         self.iteration += 1
@@ -91,12 +92,16 @@ class TestQuadrotorFormation(gym.Env):
     def get_init_map(self, index):
 
         if self.map_type == "train":
-            with open('/home/avsp/Masaüstü/GansNRoses/all_possible_maps.pkl', 'rb') as f:
+            with open('all_possible_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f) 
 
         elif self.map_type == "test":
-            with open('/home/avsp/Masaüstü/GansNRoses/all_test_maps.pkl', 'rb') as f:
+            with open('all_test_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
+
+        elif self.map_type == "random":
+            with open('random_1000_maps.pkl', 'rb') as f:
+                map_dataset = pickle.load(f)       
  
         return map_dataset[index]
 

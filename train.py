@@ -11,12 +11,10 @@ from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
 from environment.env import QuadrotorFormation
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
 
+import time
 
-<<<<<<< HEAD
-max_steps = 1e6
-=======
 max_steps = 3e5
->>>>>>> refs/remotes/origin/master
+
 
 class CustomCNN(BaseFeaturesExtractor):
     """
@@ -66,28 +64,17 @@ def main():
 
     #model.learn(total_timesteps=max_steps)
     #model.save("./weights/a2c_gan_curr2")
+    for k in range(100):
+        for i in range(10):
+            print("{} to {} training...".format(k*10,k*10+i))
+            vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="random", visualization=False, random_map_start=k*10,random_map_end=k*10+i), n_envs=1, vec_env_cls=SubprocVecEnv)
+            model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=0, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
+            #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
 
-<<<<<<< HEAD
-    # Train with GAN Random Maps
-    vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False,data_percent=10), n_envs=1, vec_env_cls=SubprocVecEnv)
-    model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, exploration_fraction = 0.8, verbose=1, tensorboard_log="./dqn_tensorboard/")
-    #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
-
-    model.learn(total_timesteps=max_steps)
-    model.save("./weights/DQN-10-random")
-    
-=======
-    for i in range(9):
-
-        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False, data_percent=(i+1)), n_envs=1, vec_env_cls=SubprocVecEnv)
-        model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
-        #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
-
-        model.learn(total_timesteps=max_steps)
-        model.save(f"./weights/dqn_{(i+1)}")
+            model.learn(total_timesteps=max_steps)
+            model.save(f"./weights/dqn_random_{(k)}_{(i)}")
 
 
->>>>>>> refs/remotes/origin/master
 if __name__ == '__main__':
     main()
 

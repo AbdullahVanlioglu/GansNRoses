@@ -19,7 +19,7 @@ import random
 
 class QuadrotorFormation(gym.Env):
 
-    def __init__(self, map_type="random", visualization=False, data_percent=10):
+    def __init__(self, map_type="random", visualization=False, data_percent=10,random_map_start=50,random_map_end=60):
         super(QuadrotorFormation, self).__init__()
 
         self.seed()
@@ -38,9 +38,12 @@ class QuadrotorFormation(gym.Env):
         self.x_lim = 3
         self.y_lim = 3
         self.iteration = 0
-        self.map_index = 0
+        self.map_index = random_map_start
         self.map_iter = 0
         self.reward = 0
+
+        self.max_random_map=random_map_end
+        self.min_random_map=random_map_start
 
         self.index_set = random.sample(range(1, 2**16-1), int((2**16-2)*data_percent/100))
 
@@ -51,7 +54,7 @@ class QuadrotorFormation(gym.Env):
         return [seed]
 
     def step(self, action):
-        # time.sleep(0.2)
+        #time.sleep(0.2)
         done = False
         self.reward = -1
         self.iteration += 1
@@ -64,11 +67,7 @@ class QuadrotorFormation(gym.Env):
 
         if int(self.reward_map[int(self.agent.y), int(self.agent.x)]) == 1:
             self.reward_map[int(self.agent.y),int( self.agent.x)] = 0
-<<<<<<< HEAD
-            self.reward += 1
-=======
             self.reward = 0
->>>>>>> refs/remotes/origin/master
 
         self.reward_wall_num()
         state = self.get_observation()
@@ -87,19 +86,11 @@ class QuadrotorFormation(gym.Env):
 
     def get_observation(self):
 
-<<<<<<< HEAD
-        state = np.zeros((2,4,4))
-
-        #state[:,:,0] = self.path_map*255.0
-        state[0,:,:] = self.reward_map
-        state[1,:,:] = self.agent.state
-=======
         state = np.zeros((4,4,2))
 
         #state[:,:,0] = self.path_map*255.0
         state[:,:,0] = self.reward_map*255.0
         state[:,:,1] = self.agent.state*255.0
->>>>>>> refs/remotes/origin/master
         
         return np.array(state, dtype=np.uint8)
 
@@ -123,6 +114,10 @@ class QuadrotorFormation(gym.Env):
             with open('all_test_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
 
+        elif self.map_type == "random":
+            with open('random_1000_maps.pkl', 'rb') as f:
+                map_dataset = pickle.load(f)
+
         return map_dataset[index].copy()
 
     def reward_wall_num(self):
@@ -138,14 +133,13 @@ class QuadrotorFormation(gym.Env):
         self.iteration = 0
         self.reward = 0
 
-<<<<<<< HEAD
-        self.map_index = np.random.randint(low=0, high=len(self.index_set)-1)
-=======
->>>>>>> refs/remotes/origin/master
-        init_map = self.get_init_map(self.index_set[self.map_index])
+        #init_map = self.get_init_map(self.index_set[self.map_index])
+        init_map = self.get_init_map(self.map_index)
         #if self.map_iter % 60 == 0 and self.map_iter !=0:
         self.map_index += 1
-        self.map_index %= len(self.index_set)
+        #self.map_index %= self.max_random_map
+        if self.map_index>self.max_random_map:
+            self.map_index=self.min_random_map
 
         agent_initX = 0
         agent_initY = 0

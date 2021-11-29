@@ -1,0 +1,143 @@
+Random 1 start 0
+
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 1 Reward:-1536
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 2 Reward:-1259
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 3 Reward:-979
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 4 Reward:-64
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 5 Reward:-63
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 6 Reward:-68
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 7 Reward:-64
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 8 Reward:-61
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 9 Reward:-59
+
+
+Random 2 start 50
+
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 1 Reward:-2125
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 2 Reward:-1537
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 3 Reward:-99
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 4 Reward:-986
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 5 Reward:-76
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 6 Reward:-67
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 7 Reward:-268
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 8 Reward:-68
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 9 Reward:-252
+
+
+Random 3 starts 100
+
+
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 1 Reward:-2991
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 2 Reward:-2106
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 3 Reward:-2105
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 4 Reward:-1910
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 5 Reward:-2115
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 6 Reward:-1918
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 7 Reward:-1368
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 8 Reward:-1250
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 9 Reward:-66
+
+Random 4 starts 150
+
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 1 Reward:-1913
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 2 Reward:-64
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 3 Reward:-69
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 4 Reward:-66
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 5 Reward:-61
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 6 Reward:-61
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 7 Reward:-59
+
+Random 5 starts 200
+
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 1 Reward:-2615
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 2 Reward:-2118
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 3 Reward:-1174
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 4 Reward:-1367
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 5 Reward:-1173
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 6 Reward:-1000
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Agent 7 Reward:-824
+
+
+
