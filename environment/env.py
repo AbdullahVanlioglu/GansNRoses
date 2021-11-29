@@ -54,7 +54,7 @@ class QuadrotorFormation(gym.Env):
         return [seed]
 
     def step(self, action):
-        #time.sleep(0.2)
+        time.sleep(0.2)
         done = False
         self.reward = -1
         self.iteration += 1
@@ -117,6 +117,12 @@ class QuadrotorFormation(gym.Env):
         elif self.map_type == "random":
             with open('random_1000_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
+
+        elif self.map_type == "gan":
+            with open('training_map_library.pkl', 'rb') as f:
+                map_dataset = pickle.load(f)
+                
+            return map_dataset[index][0].copy()
 
         return map_dataset[index].copy()
 
