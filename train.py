@@ -64,7 +64,7 @@ def main():
 
     #model.learn(total_timesteps=max_steps)
     #model.save("./weights/a2c_gan_curr2")
-    for k in range(100):
+    for k in range(2,100):
         for i in range(10):
             print("{} to {} training...".format(k*10,k*10+i))
             vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="random", visualization=False, random_map_start=k*10,random_map_end=k*10+i), n_envs=1, vec_env_cls=SubprocVecEnv)
