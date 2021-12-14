@@ -44,7 +44,7 @@ class TestQuadrotorFormation(gym.Env):
         return [seed]
 
     def step(self, action):
-        #time.sleep(0.1)
+        time.sleep(0.1)
         done = False
         self.reward = -1
         self.iteration += 1
@@ -65,7 +65,6 @@ class TestQuadrotorFormation(gym.Env):
             done = True
             self.close()
 
-        
         return state, self.reward, done, {}
 
     def get_observation(self):
@@ -266,7 +265,12 @@ class TestGanEnv(gym.Env):
         return [seed]
 
     def step(self, action):
-        #time.sleep(0.1)
+        
+        if self.visualization:
+            self.render()
+
+        time.sleep(0.1)
+
         done = False
         self.reward = -1
         self.iteration += 1
@@ -280,8 +284,7 @@ class TestGanEnv(gym.Env):
         self.reward_wall_num()
         state = self.get_observation()
 
-        if self.visualization:
-            self.render()
+        
 
         if np.all(self.reward_map == 0) or self.iteration >= 100:
             done = True
@@ -331,11 +334,10 @@ class TestGanEnv(gym.Env):
             self.rewPos_list.append(x)
 
     def reset(self):
-
+        
         self.iteration = 0
         self.reward = 0
-        init_map = self.get_init_map()[0]
-
+        init_map = self.get_init_map()
         agent_initX = 0
         agent_initY = 0
         self.reward_map = init_map[1]

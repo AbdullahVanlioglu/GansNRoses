@@ -24,7 +24,7 @@ from environment.singleAgentTestEnv import TestGanEnv
 def test_score():
 
     env = TestGanEnv(map_type="test", visualization=False)
-    model = DQN.load("./weights/single_map_dqn_1", env = env)
+    model = DQN.load("./weights/single_map_dqn_3", env = env)
 
     total_rew = 0
 
@@ -124,23 +124,26 @@ class GAN:
                 self.G.zero_grad()
                 fake = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
                 output = self.D(fake).to(opt.device)
-                
+
+                coded_fake_map = one_hot_to_ascii_level(fake.detach(), opt.token_list)
+
+                _, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
+
                 with open('./library/temp_map.pkl', 'wb') as f:
-                    pickle.dump(fake.detach().numpy(), f)
+                    pickle.dump(matrix_map, f)
 
                 agent_score = test_score()
 
-                coded_fake_map = one_hot_to_ascii_level(fake.detach(), opt.token_list)
-                _, prize_locations, _ = fa_regenate(coded_fake_map, opt)
+                loss = 0
 
                 if len(prize_locations) == 0:
                    loss = 0.2
 
                 if agent_score >= -16:
-                    loss += 0.1
+                    loss = 0.1
                 else:
                     loss = 0
-
+                
                 errG = -output.mean() + torch.Tensor([loss])
                 errG.backward(retain_graph=False)
 
@@ -161,8 +164,8 @@ class GAN:
         # self.D = reset_grads(self.D, True)
         
     def generate_map(self, gen_lib, opt):
-
-        for _ in range(5):
+        
+        while True:
             noise_ = generate_spatial_noise([1, opt.nc_current, 4, 4], device=opt.device) # 1x2x4x4
             prev = torch.zeros(1, opt.nc_current, 4, 4).to(opt.device)
 
@@ -170,8 +173,15 @@ class GAN:
                 self.G.eval()
                 generated_map = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
 
-            gen_lib.add(generated_map, opt) 
+            coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
+            _, prize_locations, _ = fa_regenate(coded_fake_map, opt)
 
+            if len(prize_locations) != 0:
+                gen_lib.add(generated_map, opt) 
+
+            if gen_lib.library_size >= 5:
+                break
+            
         gen_lib.save_maps()
 
     def better_save(self, iteration):

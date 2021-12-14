@@ -54,7 +54,7 @@ def main():
     replace_tokens = REPLACE_TOKENS
     #==================================================================================
 
-    gen_lib = Library(5)
+    gen_lib = Library(100)
 
     G = GAN(opt)
     
