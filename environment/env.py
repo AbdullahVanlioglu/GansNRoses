@@ -6,7 +6,6 @@ import time
 import sys
 import numpy as np
 
-
 from gym import spaces
 from gym.utils import seeding
 from gym.envs.classic_control import rendering
@@ -38,11 +37,13 @@ class QuadrotorFormation(gym.Env):
         self.x_lim = 3
         self.y_lim = 3
         self.iteration = 0
-        self.map_index = 0
+        #self.map_index = 0
+        self.map_index = np.random.randint(1, 2**16-1)
         self.map_iter = 0
         self.reward = 0
 
-        self.index_set = random.sample(range(1, 2**16-1), int((2**16-2)*data_percent/100))
+        #self.index_set = random.sample(range(1, 2**16-1), int((2**16-2)*data_percent/100))
+        
 
         self.reward_map = np.zeros((self.y_lim, self.x_lim))
 
@@ -103,11 +104,11 @@ class QuadrotorFormation(gym.Env):
     def get_init_map(self, index):
 
         if self.map_type == "train":
-            with open('/home/avsp/Masaüstü/GansNRoses/all_possible_maps.pkl', 'rb') as f:
+            with open('/home/avsp/Masaüstü/GansNRoses/library/all_possible_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f) 
 
         elif self.map_type == "test":
-            with open('/home/avsp/Masaüstü/GansNRoses/all_test_maps.pkl', 'rb') as f:
+            with open('/home/avsp/Masaüstü/GansNRoses/librar/all_test_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
 
         return map_dataset[index].copy()
@@ -125,10 +126,11 @@ class QuadrotorFormation(gym.Env):
         self.iteration = 0
         self.reward = 0
 
-        init_map = self.get_init_map(self.index_set[self.map_index])
+        #init_map = self.get_init_map(self.index_set[self.map_index])
+        init_map = self.get_init_map(self.map_index)
         #if self.map_iter % 60 == 0 and self.map_iter !=0:
-        self.map_index += 1
-        self.map_index %= len(self.index_set)
+        #self.map_index += 1
+        #self.map_index %= len(self.index_set)
 
         agent_initX = 0
         agent_initY = 0

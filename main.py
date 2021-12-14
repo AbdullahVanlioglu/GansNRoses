@@ -66,7 +66,6 @@ def main():
 
         coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
         ground_locations, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
-        print(matrix_map)
 
         if len(prize_locations) == 0:
             continue

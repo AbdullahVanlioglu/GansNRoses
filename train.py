@@ -6,6 +6,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import pandas as pd
+import pickle
 
 from torch.nn.functional import interpolate
 from loguru import logger
@@ -15,6 +16,28 @@ from environment.level_utils import  one_hot_to_ascii_level
 from models import init_models, reset_grads, calc_gradient_penalty, save_networks
 from draw_concat import draw_concat
 from read_maps import *
+
+from stable_baselines3 import DQN
+from environment.singleAgentTestEnv import TestGanEnv
+
+
+def test_score():
+
+    env = TestGanEnv(map_type="test", visualization=False)
+    model = DQN.load("./weights/single_map_dqn_1", env = env)
+
+    total_rew = 0
+
+    done = False
+    obs = env.reset()
+
+    while not done:
+        action, _states = model.predict(obs, deterministic=True)
+        obs, rewards, done, info = env.step(action)
+        total_rew += rewards
+
+    return total_rew
+
 
 stat_columns = ['errD_fake', 'errD_real', 'errG']
 
@@ -101,8 +124,18 @@ class GAN:
                 self.G.zero_grad()
                 fake = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
                 output = self.D(fake).to(opt.device)
+                
+                with open('./library/temp_map.pkl', 'wb') as f:
+                    pickle.dump(fake.detach().numpy(), f)
 
-                errG = -output.mean()
+                agent_score = test_score()
+
+                if agent_score >= -16:
+                    loss = 1
+                else:
+                    loss = 0
+
+                errG = -output.mean() + torch.Tensor(loss)
                 errG.backward(retain_graph=False)
 
                 self.optimizerG.step()

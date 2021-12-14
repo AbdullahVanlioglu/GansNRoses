@@ -1,4 +1,5 @@
 import torch
+import gym
 import torch.nn as nn
 
 from stable_baselines3 import A2C, DQN
@@ -8,7 +9,8 @@ from environment.env import QuadrotorFormation
 from stable_baselines3.common.vec_env import SubprocVecEnv
 
 
-max_steps = 3e5
+#max_steps = 3e5
+max_steps = 1e5
 
 class CustomCNN(BaseFeaturesExtractor):
     """
@@ -69,8 +71,19 @@ def main():
         model.save(f"./weights/dqn_{(i+1)*0.02}")
 
 
+def single_map_train():
+
+    for i in range(4):
+        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False),  n_envs=1, vec_env_cls=SubprocVecEnv)
+        model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
+        #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
+
+        model.learn(total_timesteps=max_steps)
+        model.save(f"./weights/single_map_dqn_{i+1}")
+
 if __name__ == '__main__':
-    main()
+    #main()
+    single_map_train()
 
 # obs = env.reset()
 # while True:

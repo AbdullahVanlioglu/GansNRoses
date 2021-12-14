@@ -1,0 +1,13 @@
+2021-12-14 15:30:20,004 INFO    MainThread:28521 [internal.py:wandb_internal():91] W&B internal server running at pid: 28521, started at: 2021-12-14 15:30:20.003850
+2021-12-14 15:30:20,006 INFO    WriterThread:28521 [datastore.py:open_for_write():80] open: output/wandb/offline-run-20211214_153019-3mgsw24b/run-3mgsw24b.wandb
+2021-12-14 15:30:20,010 DEBUG   HandlerThread:28521 [handler.py:handle_request():124] handle_request: run_start
+2021-12-14 15:30:21,559 DEBUG   HandlerThread:28521 [meta.py:__init__():39] meta init
+2021-12-14 15:30:21,560 DEBUG   HandlerThread:28521 [meta.py:__init__():53] meta init done
+2021-12-14 15:30:21,560 DEBUG   HandlerThread:28521 [meta.py:probe():210] probe
+2021-12-14 15:30:21,566 DEBUG   HandlerThread:28521 [meta.py:_setup_git():200] setup git
+2021-12-14 15:30:21,591 DEBUG   HandlerThread:28521 [meta.py:_setup_git():207] setup git done
+2021-12-14 15:30:21,591 DEBUG   HandlerThread:28521 [meta.py:_save_pip():57] save pip
+2021-12-14 15:30:21,592 DEBUG   HandlerThread:28521 [meta.py:_save_pip():71] save pip done
+2021-12-14 15:30:21,592 DEBUG   HandlerThread:28521 [meta.py:_save_conda():78] save conda
+2021-12-14 15:30:24,623 DEBUG   HandlerThread:28521 [meta.py:_save_conda():86] save conda done
+2021-12-14 15:30:24,623 DEBUG   HandlerThread:28521 [meta.py:probe():252] probe done

@@ -27,5 +27,6 @@ def main():
 
             #time.sleep(0.1)
     print(total_rew)
+    
 if __name__ == '__main__':
     main()

@@ -20,7 +20,7 @@ class Library():
         return self.train_library[rindex]
     
     def save_maps(self):
-        with open('./library/training_map_library.pkl', 'wb') as f:
+        with open('./library/gan_generated_library.pkl', 'wb') as f:
             pickle.dump(self.train_library, f)
 
 

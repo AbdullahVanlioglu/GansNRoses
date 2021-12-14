@@ -1,0 +1,25 @@
+[32m2021-12-14 13:06:16.112[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+TYPE FAKE (1, 2, 4, 4)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+[[[[0.5080179  0.5228476  0.47599545 0.58369565]
+   [0.5060504  0.54050994 0.4807515  0.51993704]
+   [0.48061243 0.43155685 0.5593398  0.41920713]
+   [0.41411117 0.53484654 0.48867458 0.4787031 ]]
+  [[0.4919821  0.47715238 0.5240045  0.41630435]
+   [0.49394962 0.45949006 0.5192485  0.480063  ]
+   [0.5193876  0.5684432  0.44066018 0.5807929 ]
+   [0.5858888  0.46515346 0.5113254  0.52129686]]]]
+  0%|                                                                                          | 0/15 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    main()
+  File "main.py", line 65, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 133, in train
+    agent_score = test_score()
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 32, in test_score
+    obs = env.reset()
+  File "/home/avsp/Masaüstü/GansNRoses/environment/singleAgentTestEnv.py", line 341, in reset
+    self.reward_map = init_map[1]
+IndexError: index 1 is out of bounds for axis 0 with size 1
