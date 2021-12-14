@@ -265,7 +265,7 @@ class TestGanEnv(gym.Env):
         return [seed]
 
     def step(self, action):
-        
+
         if self.visualization:
             self.render()
 
@@ -286,7 +286,7 @@ class TestGanEnv(gym.Env):
 
         
 
-        if np.all(self.reward_map == 0) or self.iteration >= 100:
+        if np.all(self.reward_map == 0) or self.iteration >= 30:
             done = True
             self.close()
 

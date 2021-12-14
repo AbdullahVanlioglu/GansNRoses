@@ -12,7 +12,7 @@ class TXT_Library():
     def __init__(self):
 
         #target = f'/home/avsp/Masaüstü/ganner/training_libs/training_map_random.pickle'
-        target = f'/home/avsp/Masaüstü/GansNRoses/library/temp_map.pkl'
+        target = f'/home/avsp/Masaüstü/GansNRoses/library/gan_generated_library.pkl'
         
         if os.path.getsize(target) > 0:      
             with open(target, "rb") as f:

@@ -1,5 +1,6 @@
 import os
 import numpy as np
+from numpy.matrixlib.defmatrix import matrix
 
 import torch
 import torch.nn as nn
@@ -174,10 +175,9 @@ class GAN:
                 generated_map = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
 
             coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
-            _, prize_locations, _ = fa_regenate(coded_fake_map, opt)
+            _, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
 
-            if len(prize_locations) != 0:
-                gen_lib.add(generated_map, opt) 
+            gen_lib.add(matrix_map, opt) 
 
             if gen_lib.library_size >= 5:
                 break
