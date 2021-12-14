@@ -15,6 +15,7 @@ from config import get_arguments, post_config
 from environment.tokens import REPLACE_TOKENS as REPLACE_TOKENS
 from environment.level_image_gen import LevelImageGen as LevelGen
 from environment.level_utils import read_level, one_hot_to_ascii_level
+from generate_noise import generate_spatial_noise
 
 
 def get_tags(opt):
@@ -53,13 +54,14 @@ def main():
     replace_tokens = REPLACE_TOKENS
     #==================================================================================
 
-    gen_lib = Library(600)
+    gen_lib = Library(5)
 
     G = GAN(opt)
     
     opt.input_name = "map_zero.txt"
     init_map = read_level(opt, None, replace_tokens)
     idx = 0
+
     while(True):
         
         generated_map = G.train(np.array(init_map), opt)
@@ -67,19 +69,21 @@ def main():
         coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
         ground_locations, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
 
+        """
         if len(prize_locations) == 0:
             continue
 
         else:
             gen_lib.add(matrix_map, opt) #add it to generator library
+        """
 
-        if idx >= 200:
+        if idx >= 50:
             G.better_save(idx)
             break
-
+            
         idx += 1
 
-    gen_lib.save_maps()
+    G.generate_map(gen_lib, opt)
 
 if __name__ == "__main__":
     main()

@@ -130,12 +130,18 @@ class GAN:
 
                 agent_score = test_score()
 
+                coded_fake_map = one_hot_to_ascii_level(fake.detach(), opt.token_list)
+                _, prize_locations, _ = fa_regenate(coded_fake_map, opt)
+
+                if len(prize_locations) == 0:
+                   loss = 0.2
+
                 if agent_score >= -16:
-                    loss = 1
+                    loss += 0.1
                 else:
                     loss = 0
 
-                errG = -output.mean() + torch.Tensor(loss)
+                errG = -output.mean() + torch.Tensor([loss])
                 errG.backward(retain_graph=False)
 
                 self.optimizerG.step()
@@ -145,14 +151,28 @@ class GAN:
             self.schedulerD.step()
             self.schedulerG.step()
 
-        # self.G = reset_grads(self.G, True)
-        # self.D = reset_grads(self.D, True)
-        
         with torch.no_grad():
             self.G.eval()
             generated_map = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
-            
+
         return generated_map
-    
+
+        # self.G = reset_grads(self.G, True)
+        # self.D = reset_grads(self.D, True)
+        
+    def generate_map(self, gen_lib, opt):
+
+        for _ in range(5):
+            noise_ = generate_spatial_noise([1, opt.nc_current, 4, 4], device=opt.device) # 1x2x4x4
+            prev = torch.zeros(1, opt.nc_current, 4, 4).to(opt.device)
+
+            with torch.no_grad():
+                self.G.eval()
+                generated_map = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
+
+            gen_lib.add(generated_map, opt) 
+
+        gen_lib.save_maps()
+
     def better_save(self, iteration):
         save_networks(self.G, self.D, iteration)

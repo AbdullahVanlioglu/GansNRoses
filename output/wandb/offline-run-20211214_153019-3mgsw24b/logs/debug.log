@@ -16,3 +16,11 @@ config: {'game': 'environment', 'mode': 'train', 'testmode': 'test_random', 'tes
 2021-12-14 15:30:24,150 INFO    MainThread:28456 [wandb_run.py:_redirect():1504] Redirecting console.
 2021-12-14 15:30:24,153 INFO    MainThread:28456 [wandb_run.py:_redirect():1560] Redirects installed.
 2021-12-14 15:30:24,153 INFO    MainThread:28456 [wandb_init.py:init():555] run started, returning control to user process
+2021-12-14 15:40:43,187 INFO    MainThread:28456 [wandb_run.py:_atexit_cleanup():1595] got exitcode: 0
+2021-12-14 15:40:43,187 INFO    MainThread:28456 [wandb_run.py:_restore():1567] restore
+2021-12-14 15:40:46,773 INFO    MainThread:28456 [wandb_run.py:_wait_for_finish():1717] got exit ret: 
+2021-12-14 15:40:46,878 INFO    MainThread:28456 [wandb_run.py:_wait_for_finish():1717] got exit ret: 
+2021-12-14 15:40:46,980 INFO    MainThread:28456 [wandb_run.py:_wait_for_finish():1717] got exit ret: done: true
+exit_result {
+}
+
