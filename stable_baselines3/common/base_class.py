@@ -172,13 +172,13 @@ class BaseAlgorithm(ABC):
     @staticmethod
     def _wrap_env(env: GymEnv, verbose: int = 0) -> VecEnv:
         if not isinstance(env, VecEnv):
-            if verbose >= 1:
-                print("Wrapping the env in a DummyVecEnv.")
+            #if verbose >= 1:
+                #print("Wrapping the env in a DummyVecEnv.")
             env = DummyVecEnv([lambda: env])
 
         if is_image_space(env.observation_space) and not is_wrapped(env, VecTransposeImage):
-            if verbose >= 1:
-                print("Wrapping the env in a VecTransposeImage.")
+            #if verbose >= 1:
+                #print("Wrapping the env in a VecTransposeImage.")
             env = VecTransposeImage(env)
 
         # check if wrapper for dict support is needed when using HER

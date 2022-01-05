@@ -146,6 +146,8 @@ class GAN:
                     loss = 0
                 
                 errG = -output.mean() + torch.Tensor([loss])
+                
+                #errG = -output.mean()
                 errG.backward(retain_graph=False)
 
                 self.optimizerG.step()
@@ -179,7 +181,7 @@ class GAN:
 
             gen_lib.add(matrix_map, opt) 
 
-            if gen_lib.library_size >= 5:
+            if gen_lib.len_library >= 5:
                 break
             
         gen_lib.save_maps()

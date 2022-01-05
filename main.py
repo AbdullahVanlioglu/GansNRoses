@@ -65,7 +65,6 @@ def main():
     while(True):
         
         generated_map = G.train(np.array(init_map), opt)
-
         coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
         ground_locations, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
 
@@ -77,7 +76,7 @@ def main():
             gen_lib.add(matrix_map, opt) #add it to generator library
         """
 
-        if idx >= 50:
+        if idx >= 500:
             G.better_save(idx)
             break
             

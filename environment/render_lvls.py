@@ -21,6 +21,7 @@ if __name__ == '__main__':
 
     for curr_gen in dir_names:
         directory_gen = directory + curr_gen
+        print(directory_gen)
         names = os.listdir(directory_gen)
         names.sort()
 
