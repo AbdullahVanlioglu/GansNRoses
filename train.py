@@ -25,7 +25,7 @@ from environment.singleAgentTestEnv import TestGanEnv
 def test_score():
 
     env = TestGanEnv(map_type="test", visualization=False)
-    model = DQN.load("./weights/single_map_dqn_3", env = env)
+    model = DQN.load("./weights/single_map_dqn_1", env = env)
 
     total_rew = 0
 
@@ -139,11 +139,12 @@ class GAN:
 
                 if len(prize_locations) == 0:
                    loss = 0.2
-
-                if agent_score >= -16:
-                    loss = 0.1
+                
                 else:
-                    loss = 0
+                    if agent_score >= -16:
+                        loss = 0.1
+                    else:
+                        loss = 0
                 
                 errG = -output.mean() + torch.Tensor([loss])
                 
@@ -167,7 +168,9 @@ class GAN:
         # self.D = reset_grads(self.D, True)
         
     def generate_map(self, gen_lib, opt):
-        
+
+        self.G.load_state_dict(torch.load("./weights/G1_200.pth"))
+
         while True:
             noise_ = generate_spatial_noise([1, opt.nc_current, 4, 4], device=opt.device) # 1x2x4x4
             prev = torch.zeros(1, opt.nc_current, 4, 4).to(opt.device)
@@ -178,10 +181,9 @@ class GAN:
 
             coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
             _, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
-
             gen_lib.add(matrix_map, opt) 
 
-            if gen_lib.len_library >= 5:
+            if len(gen_lib.train_library) >= 5:
                 break
             
         gen_lib.save_maps()

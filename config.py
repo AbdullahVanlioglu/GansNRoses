@@ -60,6 +60,8 @@ def get_arguments():
     parser.add_argument("--add_prev", type=bool, help="Add previous generated image, this is for scale system",
                         default=False)
 
+    parser.add_argument("--model", default="train", help="Train or Test")
+
     return parser
 
 

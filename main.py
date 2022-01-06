@@ -54,35 +54,42 @@ def main():
     replace_tokens = REPLACE_TOKENS
     #==================================================================================
 
-    gen_lib = Library(100)
+    if opt.model == "train":
+        print("Train Mode")
+        gen_lib = Library(100)
 
-    G = GAN(opt)
-    
-    opt.input_name = "map_zero.txt"
-    init_map = read_level(opt, None, replace_tokens)
-    idx = 0
-
-    while(True):
+        G = GAN(opt)
         
-        generated_map = G.train(np.array(init_map), opt)
-        coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
-        ground_locations, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
+        opt.input_name = "map_zero.txt"
+        init_map = read_level(opt, None, replace_tokens)
+        idx = 0
 
-        """
-        if len(prize_locations) == 0:
-            continue
-
-        else:
-            gen_lib.add(matrix_map, opt) #add it to generator library
-        """
-
-        if idx >= 500:
-            G.better_save(idx)
-            break
+        while(True):
             
-        idx += 1
+            generated_map = G.train(np.array(init_map), opt)
+            coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
+            ground_locations, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
 
-    G.generate_map(gen_lib, opt)
+            """
+            if len(prize_locations) == 0:
+                continue
+
+            else:
+                gen_lib.add(matrix_map, opt) #add it to generator library
+            """
+
+            if idx >= 200:
+                G.better_save(idx)
+                break
+                
+            idx += 1
+
+    elif opt.model =="test":
+        _ = read_level(opt, None, replace_tokens)
+        print("Test Mode")
+        gen_lib = Library(100)
+        G = GAN(opt)
+        G.generate_map(gen_lib, opt)
 
 if __name__ == "__main__":
     main()

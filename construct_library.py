@@ -6,7 +6,6 @@ class Library():
     def __init__(self,library_size=180):
         self.library_size = library_size
         self.train_library = []
-        self.len_library = len(self.train_library)
         #Load test maps and add it to test_library
 
     def add(self, map, opt):
@@ -21,7 +20,7 @@ class Library():
         return self.train_library[rindex]
     
     def save_maps(self):
-        with open('library/gan_generated_library.pkl', 'wb') as f:
+        with open('library/gan_generated_library200.pkl', 'wb') as f:
             pickle.dump(self.train_library, f)
 
 
