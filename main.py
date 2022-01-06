@@ -83,6 +83,8 @@ def main():
                 break
                 
             idx += 1
+        
+        G.generate_map(gen_lib, opt)
 
     elif opt.model =="test":
         _ = read_level(opt, None, replace_tokens)

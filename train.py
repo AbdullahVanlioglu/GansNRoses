@@ -169,7 +169,8 @@ class GAN:
         
     def generate_map(self, gen_lib, opt):
 
-        self.G.load_state_dict(torch.load("./weights/G1_200.pth"))
+        if opt.model == "test":
+            self.G.load_state_dict(torch.load("./weights/G1_200.pth"))
 
         while True:
             noise_ = generate_spatial_noise([1, opt.nc_current, 4, 4], device=opt.device) # 1x2x4x4

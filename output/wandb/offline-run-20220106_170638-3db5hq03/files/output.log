@@ -1,0 +1,31 @@
+Train Mode
+[32m2022-01-06 17:06:43.378[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+  0%|                                                                                    | 0/15 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    main()
+  File "main.py", line 69, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 136, in train
+    agent_score = test_score()
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 28, in test_score
+    model = DQN.load("./weights/single_map_dqn_1", env = env)
+  File "/home/avsp/Masaüstü/GansNRoses/stable_baselines3/common/base_class.py", line 577, in load
+    data, params, pytorch_variables = load_from_zip_file(path, device=device)
+  File "/home/avsp/Masaüstü/GansNRoses/stable_baselines3/common/save_util.py", line 409, in load_from_zip_file
+    th_object = th.load(file_content, map_location=device)
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/serialization.py", line 773, in _legacy_load
+    result = unpickler.load()
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/serialization.py", line 729, in persistent_load
+    deserialized_objects[root_key] = restore_location(obj, location)
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/serialization.py", line 811, in restore_location
+    return default_restore_location(storage, str(map_location))
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/serialization.py", line 178, in default_restore_location
+    result = fn(storage, location)
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/serialization.py", line 158, in _cuda_deserialize
+    return storage_type(obj.size())
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/cuda/__init__.py", line 433, in _lazy_new
+    return super(_CudaBase, cls).__new__(cls, *args, **kwargs)
+KeyboardInterrupt
