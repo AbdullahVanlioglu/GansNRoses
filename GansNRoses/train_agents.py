@@ -9,9 +9,9 @@ from environment.base_env import QuadrotorFormation, TrapEnv
 from stable_baselines3.common.vec_env import SubprocVecEnv
 
 
-#max_steps = 3e5
-#single_max_steps = 1e5
-trap_max_steps = 1e5
+max_steps = 3e5
+single_max_steps = 1e5
+trap_max_steps = 3e5
 
 class CustomCNN(BaseFeaturesExtractor):
     """
@@ -99,9 +99,3 @@ if __name__ == '__main__':
     #main()
     #single_map_train()
     trap_map_train()
-
-# obs = env.reset()
-# while True:
-#     action, _states = model.predict(obs)
-#     obs, rewards, dones, info = env.step(action)
-#     # env.render()

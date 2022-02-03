@@ -30,9 +30,9 @@ class BaseEnv(gym.Env):
         self.x_lim = 3
         self.y_lim = 3
         self.iteration = 0
-        self.map_lenght = 50000
+        self.num_of_map = 50000
         #self.map_index = np.random.randint(1, 2**16-1)
-        self.map_index = np.random.randint(1, self.map_lenght)
+        self.map_index = np.random.randint(1, self.num_of_map)
         self.map_iter = 0
         self.reward = 0
 
@@ -272,13 +272,13 @@ class TrapEnv(BaseEnv):
         self.trap_map = np.zeros((4, 4))
 
     def step(self, action):
-        # time.sleep(0.2)
         done = False
         self.reward = -1
         self.iteration += 1
 
         if self.visualization:
             self.render()
+            time.sleep(0.1)
 
         self.update_agent_pos(action)
 
@@ -335,8 +335,8 @@ class TrapEnv(BaseEnv):
 
         init_map = self.get_init_map(self.map_index)
 
-        # if self.map_iter % 100000 == 0 and self.map_iter != 0:
-        #     self.map_index = np.random.randint(1, self.map_lenght)
+        if self.map_iter % 100000 == 0 and self.map_iter != 0:
+            self.map_index = np.random.randint(1, self.num_of_map)
 
         agent_initX = 0
         agent_initY = 0
@@ -441,36 +441,37 @@ class TestTrapEnv(BaseEnv):
 
         self.observation_space = spaces.Box(low=0, high=255,
                                         shape=(4, 4, 3), dtype=np.uint8)
-
         self.trap_map = np.zeros((4, 4))
+        self.loss = 0
 
     def step(self, action):
-        time.sleep(0.2)
         done = False
-        self.reward = -1
+        self.loss = 0
         self.iteration += 1
 
         if self.visualization:
             self.render()
+            time.sleep(0.2)
 
         self.update_agent_pos(action)
 
         if int(self.reward_map[int(self.agent.y), int(self.agent.x)]) == 1:
             self.reward_map[int(self.agent.y),int( self.agent.x)] = 0
-            self.reward = 0
-
-        elif int(self.trap_map[int(self.agent.y), int(self.agent.x)]) == 1:
-            self.reward += -2
 
         self.reward_wall_num()
         state = self.get_observation()
 
 
         if np.all(self.reward_map == 0) or self.iteration >= 30:
+            if len(np.where(self.reward_map == 1)) == 0:
+                self.loss = 1
+            else:
+                self.loss = 0.8
+
             done = True
             self.close()
 
-        return state, self.reward, done, {}
+        return state, self.loss, done, {}
 
     def get_observation(self):
 
@@ -508,7 +509,7 @@ class TestTrapEnv(BaseEnv):
     def reset(self):
         
         self.iteration = 0
-        self.reward = 0
+        self.loss = 0
 
         init_map = self.get_init_map()
 

@@ -32,7 +32,7 @@ def test_score(idx):
     env = TestTrapEnv(map_type="test", visualization=True)
     model = DQN.load(f"./weights/trap_map_dqn_{idx+1}", env = env)
 
-    total_rew = 0
+    total_score = 0
 
     done = False
     obs = env.reset()
@@ -40,9 +40,9 @@ def test_score(idx):
     while not done:
         action, _states = model.predict(obs, deterministic=True)
         obs, rewards, done, info = env.step(action)
-        total_rew += rewards
+        total_score += rewards
 
-    return total_rew
+    return total_score
 
 
 stat_columns = ['errD_fake', 'errD_real', 'errG']
@@ -138,19 +138,11 @@ class GAN:
                 with open('./library/temp_map.pkl', 'wb') as f:
                     pickle.dump(matrix_map, f)
 
-                agent_score = test_score(idx)
-
-                loss = 0
+                loss = test_score(idx)
 
                 if len(prize_locations) == 0:
-                   loss = 0.2
+                   loss += 0.2
                 
-                else:
-                    if agent_score >= -16:
-                        loss = 0.07
-                    else:
-                        loss = 0
-
                 print(loss)
                 var_loss = Variable(torch.Tensor([loss]), requires_grad=True)
 
