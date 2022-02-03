@@ -1,0 +1,12 @@
+[32m2021-11-29 15:53:55.175[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+coded_fake_map ['-X--\n', '----\n', '----\n', '----']
+prize_locations [[0, 1]]
+100%|████████████████████████████████████████████████████████████████████| 15/15 [00:00<00:00, 31.84it/s]
+Traceback (most recent call last):
+  File "main.py", line 90, in <module>
+    main()
+  File "main.py", line 81, in main
+    gen_lib.add(matrix_map, opt) #add it to generator library
+  File "/home/avsp/Masaüstü/GansNRoses/construct_library.py", line 12, in add
+    self.train_library[0].append(np.array(map).reshape((1,2,opt.full_map_size,opt.full_map_size)))
+IndexError: list index out of range

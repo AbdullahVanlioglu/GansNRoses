@@ -1,0 +1,15 @@
+
+[32m2021-11-29 15:24:27.995[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+  0%|                                                                             | 0/15 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 93, in <module>
+    main()
+  File "main.py", line 75, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 80, in train
+    fake = self.G(noise.detach(), prev, temperature=1).to(opt.device)
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/avsp/Masaüstü/GansNRoses/models/generator.py", line 35, in forward
+    return x + y
+RuntimeError: The size of tensor a (7) must match the size of tensor b (8) at non-singleton dimension 3

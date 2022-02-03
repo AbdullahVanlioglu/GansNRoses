@@ -1,0 +1,24 @@
+[32m2021-12-14 12:49:53.200[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]/home/avsp/.local/lib/python3.6/site-packages/torch/storage.py:34: FutureWarning: pickle support for Storage will be removed in 1.5. Use `torch.save` instead
+  warnings.warn("pickle support for Storage will be removed in 1.5. Use `torch.save` instead", FutureWarning)
+/home/avsp/.local/lib/python3.6/site-packages/torch/tensor.py:365: UserWarning: non-inplace resize is deprecated
+  warnings.warn("non-inplace resize is deprecated")
+  0%|                                                                                          | 0/15 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    main()
+  File "main.py", line 65, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 132, in train
+    agent_score = test_score()
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 32, in test_score
+    obs = env.reset()
+  File "/home/avsp/Masaüstü/GansNRoses/environment/singleAgentTestEnv.py", line 351, in reset
+    state = self.get_observation()
+  File "/home/avsp/Masaüstü/GansNRoses/environment/singleAgentTestEnv.py", line 298, in get_observation
+    state[:,:,0] = self.reward_map*255.0
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/tensor.py", line 494, in __array__
+    return self.numpy().astype(dtype, copy=False)
+RuntimeError: Can't call numpy() on Variable that requires grad. Use var.detach().numpy() instead.

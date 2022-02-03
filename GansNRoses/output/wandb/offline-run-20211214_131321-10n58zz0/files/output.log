@@ -1,0 +1,18 @@
+[32m2021-12-14 13:13:26.412[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+  0%|                                                                                          | 0/15 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    main()
+  File "main.py", line 65, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 138, in train
+    errG = -output.mean() + torch.Tensor(loss, requires_grad=True)
+TypeError: new() received an invalid combination of arguments - got (int, requires_grad=bool), but expected one of:
+ * (*, torch.device device)
+      didn't match because some of the keywords were incorrect: requires_grad
+ * (torch.Storage storage)
+ * (Tensor other)
+ * (tuple of ints size, *, torch.device device)
+ * (object data, *, torch.device device)
