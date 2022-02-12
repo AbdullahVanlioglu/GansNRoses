@@ -107,19 +107,19 @@ class QuadrotorFormation(gym.Env):
     def get_init_map(self, index):
 
         if self.map_type == "train":
-            with open('all_possible_maps.pkl', 'rb') as f:
+            with open('./library/all_possible_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f) 
 
         elif self.map_type == "test":
-            with open('all_test_maps.pkl', 'rb') as f:
+            with open('./library/all_test_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
 
         elif self.map_type == "random":
-            with open('random_1000_maps.pkl', 'rb') as f:
+            with open('./library/random_1000_maps.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
 
         elif self.map_type == "gan":
-            with open('gan_generated_library.pkl', 'rb') as f:
+            with open('./library/gan_generated_library1.pkl', 'rb') as f:
                 map_dataset = pickle.load(f)
                 
             return map_dataset[index][0].copy()

@@ -13,7 +13,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,0,0,1],
                       [0,0,0,0],
                       [0,0,0,0]])
-max_reward1=-3
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -23,7 +23,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,0,0,0],
                       [0,0,0,0],
                       [0,0,0,1]])
-max_reward1=-3
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -34,7 +34,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,0,0,0],
                       [0,0,0,0],
                       [1,0,0,0]])
-max_reward1=-3
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -44,7 +44,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,1,0,0],
                       [0,0,0,0],
                       [0,0,0,0]])
-max_reward1=-1
+max_reward1=0
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -54,7 +54,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,1,0,0],
                       [0,0,0,1],
                       [0,0,0,0]])
-max_reward1=-3
+max_reward1=-1
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -64,7 +64,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,0,0,1],
                       [0,0,0,0],
                       [0,1,0,0]])
-max_reward1=-5
+max_reward1=-3
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -74,7 +74,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [0,0,0,0],
                       [0,0,0,0],
                       [1,0,0,0]])
-max_reward1=-6
+max_reward1=-4
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -85,7 +85,7 @@ map1[1,:,:]=np.array([[0,0,1,0],
                       [0,0,0,0],
                       [0,0,0,0],
                       [0,0,1,0]])
-max_reward1=-5
+max_reward1=-4
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -95,7 +95,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [0,1,0,0],
                       [0,0,0,0],
                       [0,0,1,0]])
-max_reward1=-6
+max_reward1=-3
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -105,7 +105,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [0,0,0,0],
                       [0,0,0,0],
                       [1,0,0,1]])
-max_reward1=-9
+max_reward1=-6
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -115,7 +115,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,0,0,1],
                       [0,0,1,0],
                       [0,1,0,0]])
-max_reward1=-5
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -125,7 +125,7 @@ map1[1,:,:]=np.array([[0,1,0,0],
                       [0,0,0,0],
                       [0,0,0,1],
                       [0,1,0,0]])
-max_reward1=-5
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -135,7 +135,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [0,1,0,0],
                       [0,0,0,0],
                       [1,0,0,1]])
-max_reward1=-9
+max_reward1=-5
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -145,7 +145,7 @@ map1[1,:,:]=np.array([[0,0,1,0],
                       [1,0,0,0],
                       [0,0,0,1],
                       [0,1,0,0]])
-max_reward1=-7
+max_reward1=-3
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -155,7 +155,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,0,1,0],
                       [0,0,1,1],
                       [1,0,0,0]])
-max_reward1=-6
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -166,7 +166,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [0,1,0,0],
                       [0,0,0,1],
                       [1,0,1,0]])
-max_reward1=-8
+max_reward1=-3
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -176,7 +176,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [0,0,0,0],
                       [0,1,0,1],
                       [1,0,1,0]])
-max_reward1=-8
+max_reward1=-3
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -186,7 +186,7 @@ map1[1,:,:]=np.array([[0,0,1,0],
                       [0,1,0,1],
                       [0,0,1,0],
                       [1,0,0,1]])
-max_reward1=-8
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -196,7 +196,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,1,0,1],
                       [0,0,0,1],
                       [0,1,1,1]])
-max_reward1=-7
+max_reward1=-1
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -206,7 +206,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [0,1,1,0],
                       [1,0,1,0],
                       [0,1,0,1]])
-max_reward1=-8
+max_reward1=-1
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -216,7 +216,7 @@ map1[1,:,:]=np.array([[0,1,0,1],
                       [1,1,0,1],
                       [0,1,0,0],
                       [1,0,0,1]])
-max_reward1=-11
+max_reward1=-3
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -226,7 +226,7 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,1,1,0],
                       [0,1,1,1],
                       [0,1,1,1]])
-max_reward1=-8
+max_reward1=0
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -236,7 +236,7 @@ map1[1,:,:]=np.array([[0,0,0,1],
                       [1,1,0,1],
                       [0,1,1,0],
                       [1,0,1,1]])
-max_reward1=-10
+max_reward1=-2
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -246,7 +246,7 @@ map1[1,:,:]=np.array([[0,0,1,0],
                       [1,1,0,1],
                       [0,1,1,1],
                       [1,0,1,1]])
-max_reward1=-10
+max_reward1=0
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -256,7 +256,7 @@ map1[1,:,:]=np.array([[0,1,0,1],
                       [1,1,1,0],
                       [0,1,1,1],
                       [1,0,1,1]])
-max_reward1=-12
+max_reward1=-1
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -266,7 +266,7 @@ map1[1,:,:]=np.array([[0,0,1,0],
                       [1,1,1,1],
                       [1,1,1,1],
                       [1,0,1,1]])
-max_reward1=-12
+max_reward1=0
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -276,7 +276,7 @@ map1[1,:,:]=np.array([[0,1,0,1],
                       [1,1,1,1],
                       [0,1,1,1],
                       [1,1,1,1]])
-max_reward1=-13
+max_reward1=0
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -286,7 +286,7 @@ map1[1,:,:]=np.array([[0,1,0,1],
                       [1,1,0,0],
                       [0,0,1,0],
                       [1,0,0,1]])
-max_reward1=-11
+max_reward1=-4
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -296,7 +296,7 @@ map1[1,:,:]=np.array([[0,1,1,1],
                       [1,1,1,1],
                       [1,1,1,1],
                       [1,1,1,1]])
-max_reward1=-15
+max_reward1=0
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
@@ -306,15 +306,16 @@ map1[1,:,:]=np.array([[0,0,0,0],
                       [0,1,0,0],
                       [0,0,1,0],
                       [0,0,0,1]])
-max_reward1=-3
+max_reward1=0
 test_maps.append(map1)
 max_reward_list.append(max_reward1)
 
 
 max_reward=np.sum(max_reward_list)
-print("Max_Reward:{}".format(max_reward+161))
+print("Max_Reward:{}".format(max_reward))
 print("Min_Reward:{}".format(30*-100))
-"""f = open('./all_test_maps.pkl', 'wb')
+
+f = open('./all_test_maps.pkl', 'wb')
 
 
 pickler = cPickle.Pickler(f)
@@ -322,4 +323,3 @@ pickler = cPickle.Pickler(f)
 pickler.dump(np.array(test_maps))
 
 f.close()
-"""
