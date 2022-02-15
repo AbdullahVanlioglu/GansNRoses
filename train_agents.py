@@ -5,13 +5,10 @@ import torch.nn as nn
 from stable_baselines3 import A2C, DQN
 from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
-from environment.base_env import QuadrotorFormation, TrapEnv
+from environment.base_env import CurriculumEnv
 from stable_baselines3.common.vec_env import SubprocVecEnv
 
-
 max_steps = 3e5
-single_max_steps = 1e5
-trap_max_steps = 3e5
 
 class CustomCNN(BaseFeaturesExtractor):
     """
@@ -58,48 +55,12 @@ policy_kwargs = dict(
 
 
 # Train with GAN Generated Maps
-def main():
-    #vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="gan", visualization=False), n_envs=18, vec_env_cls=SubprocVecEnv)
-    #model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, exploration_fraction = 0.8, verbose=1, tensorboard_log="./dqn_tensorboard/")
-    #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/gan")
 
-    #model.learn(total_timesteps=max_steps)
-    #model.save("./weights/a2c_gan_curr2")
+def train_agent():
 
-    for i in range(1):
+    vecenv = make_vec_env(lambda: CurriculumEnv(map_type="train", visualization=False),  n_envs=1, vec_env_cls=SubprocVecEnv)
+    model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.99, tensorboard_log="./dqn_tensorboard/")
+    #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/trap")
 
-        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False, data_percent=(i+1)*0.02), n_envs=1, vec_env_cls=SubprocVecEnv)
-        model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
-        #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
-
-        model.learn(total_timesteps=max_steps)
-        model.save(f"./weights/dqn_{(i+1)*0.02}")
-
-
-def single_map_train():
-
-    for i in range(4):
-        vecenv = make_vec_env(lambda: QuadrotorFormation(map_type="train", visualization=False),  n_envs=1, vec_env_cls=SubprocVecEnv)
-        model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.65, tensorboard_log="./dqn_tensorboard/")
-        #model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/random")
-
-        model.learn(total_timesteps=single_max_steps)
-        model.save(f"./weights/test_map_dqn_{i+1}")
-
-
-def trap_map_train():
-
-    for i in range(10):
-
-        vecenv = make_vec_env(lambda: TrapEnv(map_type="train", visualization=False),  n_envs=20, vec_env_cls=SubprocVecEnv)
-        #model = DQN('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, verbose=1, learning_rate = 0.0003, exploration_fraction=0.99, tensorboard_log="./dqn_tensorboard/")
-        model = A2C('CnnPolicy', vecenv, policy_kwargs=policy_kwargs, ent_coef = 0.5, verbose=1, tensorboard_log="./a2c_tensorboard/trap")
-
-        model.learn(total_timesteps=trap_max_steps)
-        model.save(f"./weights/trap_map_dqn_{i+1}")
-
-
-if __name__ == '__main__':
-    #main()
-    #single_map_train()
-    trap_map_train()
+    model.learn(total_timesteps=max_steps)
+    model.save(f"./weights/gan_agent")

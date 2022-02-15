@@ -1,4 +1,4 @@
-D-TR
-R--T
-RT-R
+D--R
+R-R-
+R--R
 -R-R

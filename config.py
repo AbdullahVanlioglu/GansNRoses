@@ -48,7 +48,7 @@ def get_arguments():
     parser.add_argument("--lr_d", type=float, default=0.0001, help="learning rate, default=0.0005")
     parser.add_argument("--beta1", type=float, default=0.5, help="beta1 for adam. default=0.5")
     parser.add_argument("--Gsteps", type=int, help="Generator inner steps", default=1)
-    parser.add_argument("--Dsteps", type=int, help="Discriminator inner steps", default=1)
+    parser.add_argument("--Dsteps", type=int, help="Discriminator inner steps", default=0)
     parser.add_argument("--lambda_grad", type=float, help="gradient penalty weight", default=0.1)
     # alpha controls how much the reconstruction factors into the training. 0 = No reconstruction.
     parser.add_argument("--alpha", type=float, help="reconstruction loss weight", default=100)
@@ -78,13 +78,13 @@ def post_config(opt):
     set_seed(opt.manualSeed)
 
     # Defaults for other namespace values that will be overwritten during runtime
-    opt.nc_current = 3  # n tokens of level 1-1
+    opt.nc_current = 2  # n tokens of level 1-1
 
     if not hasattr(opt, "out_"):
         opt.out_ = "%s/%s/" % (opt.out, opt.input_name[:-4])
 
     opt.seed_road = None  # for mario kart seed roads after training
-    opt.token_list = ['-', 'R', 'T']  # default list of easy1.txt
+    opt.token_list = ['-', 'R']  # default list of easy1.txt
     opt.ImgGen = []  # needs to be set to the correct image gen for each game
 
     return opt

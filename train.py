@@ -2,6 +2,7 @@
 
 
 import os
+from typing import final
 import numpy as np
 from numpy.matrixlib.defmatrix import matrix
 
@@ -23,14 +24,15 @@ from draw_concat import draw_concat
 from read_maps import *
 
 from stable_baselines3 import DQN, A2C
-from environment.base_env import TrapTestEnv
+from environment.base_env import CurriculumEnv
+from train_agents import train_agent
 
 
 def test_score(idx):
 
-    env = TrapTestEnv(map_type="score", visualization=False)
-    #model = DQN.load(f"./weights/trap_map_dqn_{idx+1}", env = env)
-    model = A2C.load(f"./weights/trap_map_dqn_{idx+1}", env = env)
+    env = CurriculumEnv(map_type="score", visualization=False)
+    model = DQN.load(f"./weights/gan_agent", env = env)
+    #model = A2C.load(f"./weights/gan_agent", env = env)
 
     total_score = 0
 
@@ -67,7 +69,7 @@ class GAN:
         self.schedulerD = torch.optim.lr_scheduler.MultiStepLR(optimizer=self.optimizerD, milestones=[1500, 2500], gamma=opt.gamma)
         self.schedulerG = torch.optim.lr_scheduler.MultiStepLR(optimizer=self.optimizerG, milestones=[1500, 2500], gamma=opt.gamma)
 
-    def train(self, real, opt, idx):
+    def train(self, real, opt, idx, final_lib):
         """ Train one scale. D and G are the discriminator and generator, real is the original map and its label.
         opt is a namespace that holds all necessary parameters. """
         real = torch.FloatTensor(real) # 1x2x4x4
@@ -82,6 +84,9 @@ class GAN:
             ###############################################
             # (1) Update D network: maximize D(x) + D(G(z))
             ###############################################
+            prev = torch.zeros(1, opt.nc_current, nzx, nzy).to(opt.device)
+            prev = self.pad_image(prev)
+
             for j in range(opt.Dsteps):
 
                 if opt.add_prev:
@@ -131,26 +136,28 @@ class GAN:
                 self.G.zero_grad()
                 fake = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
                 output = self.D(fake).to(opt.device)
-                # print("fake", fake)
-                # print("opt.token_list", opt.token_list)
                 coded_fake_map = one_hot_to_ascii_level(fake.detach(), opt.token_list)
-                # print("coded_fake_map", coded_fake_map)
-                _, prize_locations, trap_locations, matrix_map = fa_regenate(coded_fake_map, opt)
-                # print("prize_locations", prize_locations)
-                # print("trap_locations", trap_locations)
-                # print("matrix_map", matrix_map)
-                
+                _, prize_locations, matrix_map = fa_regenate(coded_fake_map, opt)
+            
                 with open('./library/temp_map.pkl', 'wb') as f:
                     pickle.dump(matrix_map, f)
 
-                if len(prize_locations) == 0 or len(trap_locations) == 0:
+                if len(prize_locations) == 0:
                    loss = 1
                 else:
                     loss = test_score(idx)
-                
+
+                if loss <= -5:
+                    final_lib.add(matrix_map)
+                    final_lib.save_maps()
+                    train_agent()
+                else:
+                    pass
+
                 var_loss = Variable(torch.Tensor([loss]), requires_grad=True)
                 # print(var_loss)
-                errG = -output.mean() + var_loss
+                errG = var_loss
+                #errG = -output.mean() + var_loss
                 errG.backward(retain_graph=False)
 
                 self.optimizerG.step()
@@ -183,7 +190,6 @@ class GAN:
                 generated_map = self.G(noise_.detach(), prev.detach(), temperature=1).to(opt.device)
 
             coded_fake_map = one_hot_to_ascii_level(generated_map.detach(), opt.token_list)
-            print(coded_fake_map)
             _, prize_locations, trap_locations, matrix_map = fa_regenate(coded_fake_map, opt)
             gen_lib.add(matrix_map, opt) 
 

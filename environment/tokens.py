@@ -9,22 +9,9 @@ GROUND_TOKENS = OrderedDict(
 )
 
 
-# OBSTACLE_TOKENS = OrderedDict(
-#     {
-#         "W": "Obstacle Block"
-#     }
-# )
-
-
 PRIZE_TOKENS = OrderedDict(
     {
         "R": "Prize"
-    }
-)
-
-TRAP_TOKENS = OrderedDict(
-    {
-        "T": "Trap"
     }
 )
 
@@ -39,16 +26,15 @@ SPECIAL_TOKENS = OrderedDict(
 TOKEN_DOWNSAMPLING_HIERARCHY = [
     GROUND_TOKENS,
     PRIZE_TOKENS,
-    TRAP_TOKENS,
     SPECIAL_TOKENS
 ]
 
 
 TOKENS = OrderedDict(
-    {**GROUND_TOKENS, **PRIZE_TOKENS, **TRAP_TOKENS, **SPECIAL_TOKENS}
+    {**GROUND_TOKENS, **PRIZE_TOKENS, **SPECIAL_TOKENS}
 )
 
-TOKEN_GROUPS = [GROUND_TOKENS, PRIZE_TOKENS, TRAP_TOKENS, SPECIAL_TOKENS]
+TOKEN_GROUPS = [GROUND_TOKENS, PRIZE_TOKENS, SPECIAL_TOKENS]
 
 REPLACE_TOKENS = {"D": "-"}  # We replace these tokens so the generator doesn't add random start or end points
 

@@ -1,0 +1,45 @@
+Train Mode
+[32m2022-02-15 17:36:58.710[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/curriculum/environment/level_utils.py:76[39m | Tokens in level ['-', 'R']
+Using cuda device
+Logging to ./a2c_tensorboard/trap/A2C_13
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+  File "/home/avsp/anaconda3/envs/gpn/lib/python3.6/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/home/avsp/anaconda3/envs/gpn/lib/python3.6/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/vec_env/subproc_vec_env.py", line 26, in _worker
+    observation, reward, done, info = env.step(data)
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/monitor.py", line 97, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/environment/base_env.py", line 156, in step
+    info = {"map_index": self.map_index}
+AttributeError: 'CurriculumEnv' object has no attribute 'map_index'
+Traceback (most recent call last):
+  File "main.py", line 100, in <module>
+    main()
+  File "main.py", line 79, in main
+    train_agent()
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/train_agents.py", line 65, in train_agent
+    model.learn(total_timesteps=max_steps)
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/a2c/a2c.py", line 192, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/on_policy_algorithm.py", line 222, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/on_policy_algorithm.py", line 163, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/vec_env/base_vec_env.py", line 150, in step
+    return self.step_wait()
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/vec_env/vec_transpose.py", line 48, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/vec_env/subproc_vec_env.py", line 115, in step_wait
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/avsp/Masaüstü/GansNRoses/curriculum/stable_baselines3/common/vec_env/subproc_vec_env.py", line 115, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/avsp/anaconda3/envs/gpn/lib/python3.6/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/avsp/anaconda3/envs/gpn/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/avsp/anaconda3/envs/gpn/lib/python3.6/multiprocessing/connection.py", line 383, in _recv
+    raise EOFError
+EOFError

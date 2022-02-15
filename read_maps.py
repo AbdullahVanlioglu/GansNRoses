@@ -37,9 +37,8 @@ def fa_regenate(array, opt):
     array = [item.replace("\n", "") for item in array]
     prize_locations = []
     ground_locations = []
-    trap_locations = []
 
-    matrix_map = np.zeros((3, opt.full_map_size, opt.full_map_size))
+    matrix_map = np.zeros((2, opt.full_map_size, opt.full_map_size))
     
     for x in range(len(array[0])): #row
         for y in range(len(array[1])): #column
@@ -49,11 +48,8 @@ def fa_regenate(array, opt):
             elif array[x][y] == 'R':
                 prize_locations.append([x, y])
                 matrix_map[1,x,y] = 1
-            elif array[x][y] == 'T':
-                trap_locations.append([x, y])
-                matrix_map[2,x,y] = 1
 
-    return ground_locations, prize_locations, trap_locations, matrix_map
+    return ground_locations, prize_locations, matrix_map
 
 #Construct map from numpy array
 def fa_convert(matrix_map):

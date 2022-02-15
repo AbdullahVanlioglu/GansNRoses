@@ -1,0 +1,10 @@
+Train Mode
+[32m2022-02-15 16:42:06.312[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/curriculum/environment/level_utils.py:76[39m | Tokens in level ['-', 'R']
+init map tensor([[[[1., 1., 1., 0.],
+          [0., 1., 0., 1.],
+          [0., 1., 1., 0.],
+          [1., 0., 1., 0.]],
+         [[0., 0., 0., 1.],
+          [1., 0., 1., 0.],
+          [1., 0., 0., 1.],
+          [0., 1., 0., 1.]]]])
