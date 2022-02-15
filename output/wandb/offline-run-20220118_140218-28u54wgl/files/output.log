@@ -1,0 +1,15 @@
+Train Mode
+[32m2022-01-18 14:02:23.634[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+  0%|                                                    | 0/15 [00:06<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 97, in <module>
+    main()
+  File "main.py", line 69, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 152, in train
+    errG.backward(retain_graph=False)
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/tensor.py", line 198, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/autograd/__init__.py", line 100, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn

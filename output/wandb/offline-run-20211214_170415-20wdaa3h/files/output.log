@@ -1,0 +1,24 @@
+[32m2021-12-14 17:04:21.005[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Library size increased: 1
+Library size increased: 2
+Library size increased: 3
+Library size increased: 4
+Library size increased: 5
+  0%|                                                                                          | 0/15 [00:02<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]

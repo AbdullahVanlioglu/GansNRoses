@@ -1,0 +1,44 @@
+[32m2021-12-14 17:03:42.630[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Library size increased: 1
+Library size increased: 2
+Library size increased: 3
+Library size increased: 4
+Library size increased: 5
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Library size increased: 6
+Library size increased: 7
+Library size increased: 8
+Library size increased: 9
+Library size increased: 10
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Library size increased: 11
+Library size increased: 12
+Library size increased: 13
+Library size increased: 14
+Library size increased: 15
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Library size increased: 16
+Library size increased: 17
+Library size increased: 18
+Library size increased: 19
+Library size increased: 20
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Library size increased: 21
+Library size increased: 22
+Library size increased: 23
+Library size increased: 24
+Library size increased: 25
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+  0%|                                                                                          | 0/15 [00:02<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
