@@ -1,0 +1,20 @@
+2022-01-05 14:09:06,870 INFO    MainThread:16157 [internal.py:wandb_internal():91] W&B internal server running at pid: 16157, started at: 2022-01-05 14:09:06.870201
+2022-01-05 14:09:06,874 INFO    WriterThread:16157 [datastore.py:open_for_write():80] open: output/wandb/offline-run-20220105_140905-18q8dm15/run-18q8dm15.wandb
+2022-01-05 14:09:06,876 DEBUG   HandlerThread:16157 [handler.py:handle_request():124] handle_request: run_start
+2022-01-05 14:09:08,406 DEBUG   HandlerThread:16157 [meta.py:__init__():39] meta init
+2022-01-05 14:09:08,406 DEBUG   HandlerThread:16157 [meta.py:__init__():53] meta init done
+2022-01-05 14:09:08,406 DEBUG   HandlerThread:16157 [meta.py:probe():210] probe
+2022-01-05 14:09:08,413 DEBUG   HandlerThread:16157 [meta.py:_setup_git():200] setup git
+2022-01-05 14:09:08,438 DEBUG   HandlerThread:16157 [meta.py:_setup_git():207] setup git done
+2022-01-05 14:09:08,439 DEBUG   HandlerThread:16157 [meta.py:_save_pip():57] save pip
+2022-01-05 14:09:08,440 DEBUG   HandlerThread:16157 [meta.py:_save_pip():71] save pip done
+2022-01-05 14:09:08,440 DEBUG   HandlerThread:16157 [meta.py:_save_conda():78] save conda
+2022-01-05 14:09:11,663 DEBUG   HandlerThread:16157 [meta.py:_save_conda():86] save conda done
+2022-01-05 14:09:11,663 DEBUG   HandlerThread:16157 [meta.py:probe():252] probe done
+2022-01-05 14:09:15,103 WARNING MainThread:16157 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2022-01-05 14:09:15,239 WARNING MainThread:16157 [internal.py:wandb_internal():147] Internal process interrupt: 2
+2022-01-05 14:09:15,239 ERROR   MainThread:16157 [internal.py:wandb_internal():150] Internal process interrupted.
+2022-01-05 14:09:15,668 INFO    WriterThread:16157 [datastore.py:close():288] close: output/wandb/offline-run-20220105_140905-18q8dm15/run-18q8dm15.wandb
+2022-01-05 14:09:15,671 INFO    HandlerThread:16157 [handler.py:finish():658] shutting down handler
+2022-01-05 14:09:15,880 INFO    SenderThread:16157 [sender.py:finish():947] shutting down sender
+2022-01-05 14:09:15,881 INFO    MainThread:16157 [internal.py:handle_exit():78] Internal process exited

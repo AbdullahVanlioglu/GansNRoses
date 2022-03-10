@@ -1,0 +1,2352 @@
+[32m2021-12-14 17:48:29.725[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1114, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1101, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1088, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1135, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1091, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1153, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1176, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1172, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1164, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1228, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1222, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1237, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1249, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1285, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1241, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1282, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1281, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1273, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1281, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1289, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1255, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1321, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1329, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1329, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1386, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1393, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1339, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1385, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1364, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1381, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1437, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1414, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1453, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1420, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1477, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1474, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1503, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1545, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1508, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1516, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1555, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1598, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1604, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1588, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1620, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1606, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1637, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1651, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1650, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1583, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1658, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1697, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1655, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1703, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1707, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1767, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1747, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1743, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1777, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1731, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1833, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1858, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1858, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1853, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1873, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1860, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1855, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1901, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1963, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1916, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1883, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1950, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1967, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1962, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1918, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1899, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1988, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2027, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1998, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2001, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2023, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1968, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2034, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.1958, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2044, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2054, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2158, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2096, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2122, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2099, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2089, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2089, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2203, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2201, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2322, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2222, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2317, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2196, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2191, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2325, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2310, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2377, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2372, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2352, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2330, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2390, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2353, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2296, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2408, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2297, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2418, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2458, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2362, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2339, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2460, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2494, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2397, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2459, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2432, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2484, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2458, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2521, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2504, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2505, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2495, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2543, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2582, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2628, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2538, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2651, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2683, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2625, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2598, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2758, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2659, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2705, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2625, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2629, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2681, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2766, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2755, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2831, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2732, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2723, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2814, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2780, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2884, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2916, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2939, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2781, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2832, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2834, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2927, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2897, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2889, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2925, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2948, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2907, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2982, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2825, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2985, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3097, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3025, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3092, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3022, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2999, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2960, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.2988, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3117, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3180, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3127, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3218, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3152, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3172, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3134, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3229, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3150, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3168, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3089, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3165, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3248, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3228, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3273, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3291, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3293, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3294, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3267, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3393, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3404, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3460, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3354, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3455, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3415, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3414, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3448, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3257, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3342, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3455, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3437, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3223, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3369, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3524, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3276, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3411, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3334, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3423, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3371, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3461, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3224, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3458, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3408, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3496, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3505, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3500, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3602, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3526, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3581, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3577, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3460, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3605, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3509, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3592, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3407, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3720, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3610, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3648, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3643, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3694, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3782, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3775, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3758, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3781, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3781, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3829, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3901, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3773, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3691, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3754, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3706, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3810, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3911, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3907, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3954, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3956, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3977, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3923, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3903, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4077, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4002, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4053, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4032, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4004, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4092, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4033, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4034, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4020, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4007, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3936, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4123, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4201, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4216, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4171, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4140, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4161, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4196, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4105, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4125, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4086, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.3995, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4257, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4297, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4219, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4345, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4195, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4204, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4282, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4340, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4366, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4390, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4332, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4359, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4347, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4340, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4329, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4263, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4400, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4287, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4458, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4570, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4516, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4378, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4376, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4516, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4473, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4504, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4403, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4402, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4381, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4500, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4437, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4550, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4574, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4398, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4487, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4570, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4628, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4559, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4697, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4605, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4661, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4402, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4671, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4432, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4620, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4581, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4602, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4568, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4569, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4666, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4522, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4603, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4709, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4762, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4812, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4808, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4871, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4790, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4714, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4681, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4775, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4771, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4735, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4831, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4731, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4849, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4923, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4893, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4969, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4979, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5040, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4969, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5027, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4847, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5079, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5047, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4945, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4998, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4984, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4922, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4939, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4873, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4949, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4866, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5037, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4974, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5062, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.4948, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5132, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5060, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5168, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5099, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5365, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5181, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5278, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5361, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5173, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5122, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5158, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5323, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5250, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5185, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5248, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5181, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5037, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5292, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5343, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5281, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5168, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5271, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5348, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5476, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5334, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5291, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5380, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5422, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5408, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5421, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5355, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5494, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5401, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5249, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5369, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5420, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5270, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5318, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5425, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5434, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5448, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5425, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5410, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5560, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5398, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5632, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5544, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5632, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5562, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5566, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5561, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5567, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5563, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5451, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5489, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5464, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5508, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5611, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5506, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5714, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5679, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5474, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5575, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5895, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5721, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5696, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5884, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5786, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5756, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5693, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5661, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5741, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5757, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5683, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5748, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5789, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5727, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6015, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5859, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5821, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5881, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5865, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5745, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6036, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5849, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5814, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5919, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5875, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5901, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5829, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6062, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5766, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5958, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5968, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5977, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5889, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5727, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5946, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5449, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5779, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5991, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6020, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6054, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5960, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6000, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6110, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5977, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6143, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5934, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6137, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6058, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6248, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6079, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6050, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6276, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6277, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6080, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6061, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6029, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6196, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6192, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6215, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6238, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5983, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5791, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6352, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6148, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6174, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6202, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6200, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6208, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6015, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6070, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6236, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6135, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5967, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6164, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6019, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6376, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6113, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6117, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6181, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6245, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6234, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6032, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.5995, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6086, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6071, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6165, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6107, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6154, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6209, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6240, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6298, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6365, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6287, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6353, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6268, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6267, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6155, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6192, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6151, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6207, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6346, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6325, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6521, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6249, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6519, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6449, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6197, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6285, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6352, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6325, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6375, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6461, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6308, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6331, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6315, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6438, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6641, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6424, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6628, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6395, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6450, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6115, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6533, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6622, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6623, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6690, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6406, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6636, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6361, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6747, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6596, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6448, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6565, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6378, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6444, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6785, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6535, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6466, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6585, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6649, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6711, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6670, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6972, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6777, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6695, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6643, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6688, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6604, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6541, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6760, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6667, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6812, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6888, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6726, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6855, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6959, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6471, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6837, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6543, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6644, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6789, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7002, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6985, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6676, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6552, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6826, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6631, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6582, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6821, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6866, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7162, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6645, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6701, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6786, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6863, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6832, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6687, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6797, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6593, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6648, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6716, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6610, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6721, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6752, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6688, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6753, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6922, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6780, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6954, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6765, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6785, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7099, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6671, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6930, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6913, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6847, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6881, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6932, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6889, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7046, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6952, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6980, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6975, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7010, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7029, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7103, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7044, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7027, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6953, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6942, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7027, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6991, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6925, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7065, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7077, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7082, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7168, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6887, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.6995, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7161, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7112, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7190, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7048, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7131, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7069, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7135, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7092, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7417, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7276, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7105, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7122, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7140, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7186, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7176, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7168, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7514, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7156, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7291, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7373, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7209, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7099, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7381, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7257, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7417, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7424, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7371, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7239, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7163, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7258, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7291, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7322, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7296, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7437, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7311, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7554, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7358, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7490, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7413, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7308, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7574, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7567, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7558, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7806, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7478, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7434, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7408, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7592, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7478, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7815, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7385, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7547, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7858, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7578, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7596, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7507, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7505, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7375, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7612, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7586, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7845, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7694, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7344, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7761, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7650, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7524, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7814, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7526, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7547, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7716, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7841, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7603, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7433, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7604, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7660, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7709, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7576, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7699, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7777, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7757, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7619, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7644, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7662, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7784, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7603, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7688, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7711, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7743, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7783, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7612, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7815, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7663, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7803, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7703, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7824, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7861, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7716, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7716, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7665, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7703, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7930, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7512, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7659, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7832, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7811, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7732, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7778, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7922, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7747, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7984, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7850, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7782, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7886, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.8008, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7751, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7871, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7894, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7905, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.8126, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7900, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7912, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7766, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7819, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7921, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.8206, grad_fn=<MeanBackward0>)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+tensor(0.7948, grad_fn=<MeanBackward0>)
+Library size increased: 1
+Library size increased: 2
+Library size increased: 3
+Library size increased: 4
+Library size increased: 5
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:05<00:00,  2.69it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  5.00it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.84it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.88it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.94it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.88it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.99it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.88it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.96it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.92it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.85it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.53it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.89it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.35it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.06it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.04it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.02it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.05it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.68it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.63it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.66it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.94it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.05it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.10it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.07it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.97it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.69it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.94it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.91it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.00it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.82it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.90it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.97it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.97it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.93it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.87it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.90it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.01it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.81it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.71it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.91it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.84it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.94it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.97it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:02<00:00,  5.00it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.99it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.94it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.94it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.88it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.92it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████| 15/15 [00:03<00:00,  4.99it/s]

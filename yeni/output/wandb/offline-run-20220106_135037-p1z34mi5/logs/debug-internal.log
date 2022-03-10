@@ -1,0 +1,19 @@
+2022-01-06 13:50:38,420 INFO    MainThread:10306 [internal.py:wandb_internal():91] W&B internal server running at pid: 10306, started at: 2022-01-06 13:50:38.420145
+2022-01-06 13:50:38,424 INFO    WriterThread:10306 [datastore.py:open_for_write():80] open: output/wandb/offline-run-20220106_135037-p1z34mi5/run-p1z34mi5.wandb
+2022-01-06 13:50:38,426 DEBUG   HandlerThread:10306 [handler.py:handle_request():124] handle_request: run_start
+2022-01-06 13:50:40,045 DEBUG   HandlerThread:10306 [meta.py:__init__():39] meta init
+2022-01-06 13:50:40,046 DEBUG   HandlerThread:10306 [meta.py:__init__():53] meta init done
+2022-01-06 13:50:40,046 DEBUG   HandlerThread:10306 [meta.py:probe():210] probe
+2022-01-06 13:50:40,052 DEBUG   HandlerThread:10306 [meta.py:_setup_git():200] setup git
+2022-01-06 13:50:40,081 DEBUG   HandlerThread:10306 [meta.py:_setup_git():207] setup git done
+2022-01-06 13:50:40,081 DEBUG   HandlerThread:10306 [meta.py:_save_pip():57] save pip
+2022-01-06 13:50:40,082 DEBUG   HandlerThread:10306 [meta.py:_save_pip():71] save pip done
+2022-01-06 13:50:40,082 DEBUG   HandlerThread:10306 [meta.py:_save_conda():78] save conda
+2022-01-06 13:50:43,268 DEBUG   HandlerThread:10306 [meta.py:_save_conda():86] save conda done
+2022-01-06 13:50:43,268 DEBUG   HandlerThread:10306 [meta.py:probe():252] probe done
+2022-01-06 13:53:32,472 WARNING MainThread:10306 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2022-01-06 13:53:32,642 WARNING MainThread:10306 [internal.py:wandb_internal():147] Internal process interrupt: 2
+2022-01-06 13:53:32,642 ERROR   MainThread:10306 [internal.py:wandb_internal():150] Internal process interrupted.
+2022-01-06 13:53:33,392 INFO    WriterThread:10306 [datastore.py:close():288] close: output/wandb/offline-run-20220106_135037-p1z34mi5/run-p1z34mi5.wandb
+2022-01-06 13:53:33,461 INFO    SenderThread:10306 [sender.py:finish():947] shutting down sender
+2022-01-06 13:53:33,462 INFO    MainThread:10306 [internal.py:handle_exit():78] Internal process exited

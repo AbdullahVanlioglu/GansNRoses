@@ -1,0 +1,18 @@
+2022-02-13 01:42:14,378 INFO    MainThread:827 [internal.py:wandb_internal():91] W&B internal server running at pid: 827, started at: 2022-02-13 01:42:14.378237
+2022-02-13 01:42:14,382 INFO    WriterThread:827 [datastore.py:open_for_write():80] open: output/wandb/offline-run-20220213_014213-159y08et/run-159y08et.wandb
+2022-02-13 01:42:14,385 DEBUG   HandlerThread:827 [handler.py:handle_request():124] handle_request: run_start
+2022-02-13 01:42:15,873 DEBUG   HandlerThread:827 [meta.py:__init__():39] meta init
+2022-02-13 01:42:15,873 DEBUG   HandlerThread:827 [meta.py:__init__():53] meta init done
+2022-02-13 01:42:15,873 DEBUG   HandlerThread:827 [meta.py:probe():210] probe
+2022-02-13 01:42:15,880 DEBUG   HandlerThread:827 [meta.py:_setup_git():200] setup git
+2022-02-13 01:42:15,906 DEBUG   HandlerThread:827 [meta.py:_setup_git():207] setup git done
+2022-02-13 01:42:15,907 DEBUG   HandlerThread:827 [meta.py:_save_pip():57] save pip
+2022-02-13 01:42:15,907 DEBUG   HandlerThread:827 [meta.py:_save_pip():71] save pip done
+2022-02-13 01:42:15,908 DEBUG   HandlerThread:827 [meta.py:_save_conda():78] save conda
+2022-02-13 01:42:19,036 DEBUG   HandlerThread:827 [meta.py:_save_conda():86] save conda done
+2022-02-13 01:42:19,036 DEBUG   HandlerThread:827 [meta.py:probe():252] probe done
+2022-02-13 01:42:21,112 WARNING MainThread:827 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2022-02-13 01:42:21,336 WARNING MainThread:827 [internal.py:wandb_internal():147] Internal process interrupt: 2
+2022-02-13 01:42:21,337 ERROR   MainThread:827 [internal.py:wandb_internal():150] Internal process interrupted.
+2022-02-13 01:42:21,387 INFO    SenderThread:827 [sender.py:finish():947] shutting down sender
+2022-02-13 01:42:21,602 INFO    MainThread:827 [internal.py:handle_exit():78] Internal process exited

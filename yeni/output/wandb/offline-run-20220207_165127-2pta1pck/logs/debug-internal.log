@@ -1,0 +1,19 @@
+2022-02-07 16:51:28,122 INFO    MainThread:28365 [internal.py:wandb_internal():91] W&B internal server running at pid: 28365, started at: 2022-02-07 16:51:28.122258
+2022-02-07 16:51:28,125 INFO    WriterThread:28365 [datastore.py:open_for_write():80] open: output/wandb/offline-run-20220207_165127-2pta1pck/run-2pta1pck.wandb
+2022-02-07 16:51:28,128 DEBUG   HandlerThread:28365 [handler.py:handle_request():124] handle_request: run_start
+2022-02-07 16:51:29,673 DEBUG   HandlerThread:28365 [meta.py:__init__():39] meta init
+2022-02-07 16:51:29,674 DEBUG   HandlerThread:28365 [meta.py:__init__():53] meta init done
+2022-02-07 16:51:29,674 DEBUG   HandlerThread:28365 [meta.py:probe():210] probe
+2022-02-07 16:51:29,680 DEBUG   HandlerThread:28365 [meta.py:_setup_git():200] setup git
+2022-02-07 16:51:29,713 DEBUG   HandlerThread:28365 [meta.py:_setup_git():207] setup git done
+2022-02-07 16:51:29,714 DEBUG   HandlerThread:28365 [meta.py:_save_pip():57] save pip
+2022-02-07 16:51:29,715 DEBUG   HandlerThread:28365 [meta.py:_save_pip():71] save pip done
+2022-02-07 16:51:29,715 DEBUG   HandlerThread:28365 [meta.py:_save_conda():78] save conda
+2022-02-07 16:51:32,888 DEBUG   HandlerThread:28365 [meta.py:_save_conda():86] save conda done
+2022-02-07 16:51:32,889 DEBUG   HandlerThread:28365 [meta.py:probe():252] probe done
+2022-02-07 16:52:55,002 WARNING MainThread:28365 [internal.py:wandb_internal():147] Internal process interrupt: 1
+2022-02-07 16:52:55,165 WARNING MainThread:28365 [internal.py:wandb_internal():147] Internal process interrupt: 2
+2022-02-07 16:52:55,166 ERROR   MainThread:28365 [internal.py:wandb_internal():150] Internal process interrupted.
+2022-02-07 16:52:55,559 INFO    WriterThread:28365 [datastore.py:close():288] close: output/wandb/offline-run-20220207_165127-2pta1pck/run-2pta1pck.wandb
+2022-02-07 16:52:55,581 INFO    HandlerThread:28365 [handler.py:finish():658] shutting down handler
+2022-02-07 16:52:55,662 INFO    MainThread:28365 [internal.py:handle_exit():78] Internal process exited

@@ -1,0 +1,12 @@
+
+input/map_zero.txt
+Traceback (most recent call last):
+  File "main.py", line 93, in <module>
+    main()
+  File "main.py", line 65, in main
+    init_map = read_level(opt, None, replace_tokens)
+  File "/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py", line 74, in read_level
+    level, uniques = read_level_from_file(opt.input_dir, opt.input_name, tokens, replace_tokens)
+  File "/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py", line 94, in read_level_from_file
+    print(on_level.shape)
+NameError: name 'on_level' is not defined

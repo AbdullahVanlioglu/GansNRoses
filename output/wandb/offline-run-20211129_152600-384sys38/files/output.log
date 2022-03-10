@@ -1,0 +1,11 @@
+[32m2021-11-29 15:26:08.120[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+torch.Size([1, 2, 4, 4]) torch.Size([1, 2, 4, 4])
+  0%|                                                                             | 0/15 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 93, in <module>
+    main()
+  File "main.py", line 75, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 104, in train
+    fake = self.G(noise.detach(), prev.detach(), temperature=1).to(opt.device)
+NameError: name 'noise' is not defined

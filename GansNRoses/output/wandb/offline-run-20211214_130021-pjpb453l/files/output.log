@@ -1,0 +1,18 @@
+[32m2021-12-14 13:00:26.403[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+TYPE FAKE (1, 2, 4, 4)
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+None
+  0%|                                                                                          | 0/15 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    main()
+  File "main.py", line 65, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 132, in train
+    agent_score = test_score()
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 32, in test_score
+    obs = env.reset()
+  File "/home/avsp/Masaüstü/GansNRoses/environment/singleAgentTestEnv.py", line 341, in reset
+    self.reward_map = init_map[1]
+TypeError: 'NoneType' object is not subscriptable

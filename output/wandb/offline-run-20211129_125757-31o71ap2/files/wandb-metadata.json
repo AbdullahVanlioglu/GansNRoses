@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-90-generic-x86_64-with-debian-buster-sid",
+    "python": "3.6.8",
+    "heartbeatAt": "2021-11-29T09:58:00.244717",
+    "startedAt": "2021-11-29T09:57:57.833753",
+    "docker": null,
+    "gpu": "GeForce RTX 2070",
+    "gpu_count": 1,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/AbdullahVanlioglu/GansNRoses.git",
+        "commit": "32ca17d313cf897dfe930b387bd01b496fe053e9"
+    },
+    "email": "a.vanli2019@gmail.com",
+    "root": "/home/avsp/Masa\u00fcst\u00fc/GansNRoses",
+    "host": "avsp",
+    "username": "avsp",
+    "executable": "/home/avsp/anaconda3/envs/gpn/bin/python"
+}

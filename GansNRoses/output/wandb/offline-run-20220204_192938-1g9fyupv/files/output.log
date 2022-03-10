@@ -1,0 +1,17 @@
+Train Mode
+[32m2022-02-04 19:29:43.851[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'T', 'X']
+  0%|                                                                                        | 0/15 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 91, in <module>
+    main()
+  File "main.py", line 71, in main
+    generated_map = G.train(np.array(init_map), opt, i)
+  File "/home/avsp/Masaüstü/GansNRoses/GansNRoses/train.py", line 140, in train
+    loss = test_score(idx)
+  File "/home/avsp/Masaüstü/GansNRoses/GansNRoses/train.py", line 37, in test_score
+    obs = env.reset()
+  File "/home/avsp/Masaüstü/GansNRoses/GansNRoses/environment/base_env.py", line 517, in reset
+    init_map = self.get_init_map()
+  File "/home/avsp/Masaüstü/GansNRoses/GansNRoses/environment/base_env.py", line 502, in get_init_map
+    return super()._get_init_map(index)
+NameError: name 'index' is not defined

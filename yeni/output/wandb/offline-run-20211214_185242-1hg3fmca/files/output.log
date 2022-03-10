@@ -1,0 +1,11 @@
+
+[32m2021-12-14 18:52:47.648[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 89, in <module>
+    main()
+  File "main.py", line 67, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 128, in train
+    print(fake[2])
+IndexError: index 2 is out of bounds for dimension 0 with size 1

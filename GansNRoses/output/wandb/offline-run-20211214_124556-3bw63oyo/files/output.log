@@ -1,0 +1,23 @@
+[32m2021-12-14 12:46:04.169[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]/home/avsp/.local/lib/python3.6/site-packages/torch/storage.py:34: FutureWarning: pickle support for Storage will be removed in 1.5. Use `torch.save` instead
+  warnings.warn("pickle support for Storage will be removed in 1.5. Use `torch.save` instead", FutureWarning)
+  0%|                                                                                          | 0/15 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    main()
+  File "main.py", line 65, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 131, in train
+    agent_score = test_score()
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 32, in test_score
+    obs = env.reset()
+  File "/home/avsp/Masaüstü/GansNRoses/environment/singleAgentTestEnv.py", line 344, in reset
+    self.reward_wall_num()
+  File "/home/avsp/Masaüstü/GansNRoses/environment/singleAgentTestEnv.py", line 329, in reward_wall_num
+    reward_row, reward_col = np.where(self.reward_map == 1)
+  File "<__array_function__ internals>", line 6, in where
+  File "/home/avsp/.local/lib/python3.6/site-packages/torch/tensor.py", line 492, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

@@ -1,0 +1,16 @@
+txtlevel ['---X\n', 'X-X-\n', 'X--X\n', '-X-X\n']
+[32m2021-11-29 14:57:35.888[39m | [1mINFO[22m | [90m/home/avsp/Masaüstü/GansNRoses/environment/level_utils.py:76[39m | Tokens in level ['-', 'X']
+x shape torch.Size([1, 64, 4, 4])
+x shape torch.Size([1, 64, 10, 10])
+torch.Size([1, 2, 4, 4]) torch.Size([1, 2, 10, 10])
+  0%|                                                                 | 0/15 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 93, in <module>
+    main()
+  File "main.py", line 75, in main
+    generated_map = G.train(np.array(init_map), opt)
+  File "/home/avsp/Masaüstü/GansNRoses/train.py", line 91, in train
+    gradient_penalty = calc_gradient_penalty(self.D, real, fake, opt.lambda_grad, opt.device)
+  File "/home/avsp/Masaüstü/GansNRoses/models/__init__.py", line 45, in calc_gradient_penalty
+    interpolates = alpha * real_data + ((1 - alpha) * fake_data)
+RuntimeError: The size of tensor a (4) must match the size of tensor b (10) at non-singleton dimension 3

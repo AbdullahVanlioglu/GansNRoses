@@ -1,0 +1,4 @@
+-XX-
+XXXX
+XX-X
+-X--
